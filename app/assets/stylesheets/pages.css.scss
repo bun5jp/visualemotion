@@ -1,0 +1,55 @@
+title
+{
+	color: white;
+}
+
+head
+{
+	color: white;
+}
+
+body
+{
+	background-image: image-url('background.png');
+	background-size: cover;
+	color: white;
+
+}
+
+.header-middle
+{
+}
+
+.header-left
+{
+	float: left;
+	padding: 20px 30px;
+	font-size:30px bold;
+	margin-left: 50px;
+}
+
+.header-right li
+{
+	float: right;
+	list-style: none;
+	padding: 20px 30px;
+	font-size:30px bold;
+}
+
+h1
+{
+	font-size: 80px bold;
+	color: white;
+	font-family: serif;
+	margin: 80px 100px;
+
+}
+
+.category li
+{
+	list-style: none;
+	float: left;
+	padding: 20px;
+	font-size: 30px bold;
+	
+}
