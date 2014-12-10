@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Image1:</strong>
+  <%= @book.image1 %>
+</p>
+
+<p>
+  <strong>Image2:</strong>
+  <%= @book.image2 %>
+</p>
+
+<p>
+  <strong>Image3:</strong>
+  <%= @book.image3 %>
+</p>
+
+<p>
+  <strong>Amazon link:</strong>
+  <%= @book.amazon_link %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @book.category_id %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @book.note %>
+</p>
+
+<p>
+  <strong>Del flg:</strong>
+  <%= @book.del_flg %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
