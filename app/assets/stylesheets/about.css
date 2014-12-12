@@ -1,0 +1,16 @@
+h1
+{
+	background-image: image-url('about01png');
+	background-size: cover;
+}
+
+h2
+{
+	background-image: image-url('about02.png');
+	background-size: cover;
+}
+
+h3
+{
+	ist-style: none;
+}
