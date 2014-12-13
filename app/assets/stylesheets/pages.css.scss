@@ -1,71 +1,71 @@
 body{
-	margin: 0;
-	padding: 0;
-	font-family: "リュウミン L-KL"  "Ryumin Light KL";
-	
+margin: 0;
+padding: 0;
+font-family: "リュウミン L-KL"  "Ryumin Light KL";
+
 }
 .C{
-	background-image: image-url('bg_home01.jpg');
-	background-size: cover;
-	background-position: center;
-	height:550px;
-	width: 100%;
+background-image: image-url('bg_home01.jpg');
+background-size: cover;
+background-position: center;
+height:550px;
+width: 100%;
 
 }
 .header{
-	background-color: rgba(0,0,0,0.2);
-	height: 50px;
-	width:100%;
-	display:flex;
-	color: white;
+background-color: rgba(0,0,0,0.2);
+height: 50px;
+width:100%;
+display:flex;
+color: white;
 }
 
 .header-left{
-	flex-grow:1;
+flex-grow:1;
 
-	line-height: 50px;
-	font-size:20px;
-	text-align: center;
+line-height: 50px;
+font-size:20px;
+text-align: center;
 }
 
 .header-middle{
-	flex-grow:6;
+flex-grow:6;
 
-	line-height: 25px;
-	font-size:30px;
-	text-align: center;
-	letter-spacing:0;
+line-height: 25px;
+font-size:30px;
+text-align: center;
+letter-spacing:0;
 }
 .header-right{
-	flex-grow:1;
+flex-grow:1;
 
-	line-height: 50px;
-	font-size:20px;		
-	text-align: center;
+line-height: 50px;
+font-size:20px;		
+text-align: center;
 }
 a:link {
-    font-style:normal;
-    text-decoration:underline;
+font-style:normal;
+text-decoration:underline;
 
 }
 
 
 h1{
-	font-size: 5rem;
-	color: white;
-	font-family: serif;
-	text-align: center;
-	padding-left:100px;
-	margin: 0;
-	margin-top: 100px;
+font-size: 5rem;
+color: white;
+font-family: serif;
+text-align: center;
+padding-left:100px;
+margin: 0;
+margin-top: 100px;
 }
 h2{
-	font-size: 1rem;
-	color: white;
-	font-family: serif;
-	text-align: center;
-	letter-spacing:10px;
-	margin: 0;
+font-size: 1rem;
+color: white;
+font-family: serif;
+text-align: center;
+letter-spacing:10px;
+margin: 0;
 }
 
 
@@ -75,46 +75,45 @@ h2{
 
 
 .category{
-	width: 300px;
-	height: 100px;
-	bottom: 20px;
-	right: 30px;
-	position: fixed;
+width: 300px;
+height: 100px;
+bottom: 20px;
+right: 30px;
+position: fixed;
 
-	z-index: 100;
-	background-color: rgba(0,0,0,0.3);
-	border-radius: 10px;
-		p{
-			text-align: center;
-		}
+z-index: 100;
+background-color: rgba(0,0,0,0.3);
+border-radius: 10px;
+	p{
+		text-align: center;
+	}
 
- 	ul {
- 		text-align: center;
- 		margin: 0 auto;
- 		} 
-	 	li{
-			list-style: none;
-			float: left;
-			text-align: center;
-				p{
-
-				font-size: 10px;
-				display: block;
-				transition-duration: 1s;
-				border-radius: 5px;
-					&:hover{
-						background-color: pink;
-						}
+	ul {
+		text-align: center;
+		margin: 0 auto;
+		} 
+ 	li{
+		list-style: none;
+		float: left;
+		text-align: center;
+			p{
+			font-size: 10px;
+			display: block;
+			transition-duration: 1s;
+			border-radius: 5px;
+				&:hover{
+					background-color: pink;
 					}
-			}
+				}
 		}
+	}
 
 
 
 .testimage {
-	text-align: center;
-	img{
-	margin: 10px
+text-align: center;
+img{
+margin: 10px
 }
 
 }
