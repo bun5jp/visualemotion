@@ -5,12 +5,15 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="C">
       <header>
         <div class="header">
-        <div class="header-left">MENU</div>
+        <div class="header-left">
+        <i class="fa fa-bars"></i>
+         MENU</div>
         <div class="header-middle">VISUAL</br>EMOTION</div>
         <div class="header-right">
           <%= link_to "ABOUT", "#", class: "aboutlink" %>

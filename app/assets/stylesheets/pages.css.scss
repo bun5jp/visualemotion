@@ -12,7 +12,7 @@ body{
 
 }
 .header{
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.2);
 	height: 50px;
 	width:100%;
 	display:flex;
@@ -23,7 +23,7 @@ body{
 	flex-grow:1;
 
 	line-height: 50px;
-	font-size:30px bold;
+	font-size:20px;
 	text-align: center;
 }
 
@@ -39,15 +39,14 @@ body{
 	flex-grow:1;
 
 	line-height: 50px;
-	font-size:30px bold;		
+	font-size:20px;		
 	text-align: center;
+}
+a:link {
+    font-style:normal;
+    text-decoration:underline;
 
 }
-.aboutlink{
-		text-decoration: none;
-	
-}
-
 
 
 h1{
