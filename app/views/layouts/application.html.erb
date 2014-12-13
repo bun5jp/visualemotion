@@ -6,19 +6,22 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-  <div class="header">
-    <div class="header-middle">VISUALEMOTION</div>
-    <div class="header-left">MENU</div>
-    <div class="header-right">
-      <ul>
-        <li>HOME</li>
-      	<li><%= link_to "ABOUT", "#", class: "btn btn-large btn-primary" %></li>
-      </ul>
-    </div>
-  </div>
 <body>
-  <h1>美意識に、革命を。</h1>
-  <p>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある。</p>
+    <div class="C">
+      <header>
+        <div class="header">
+        <div class="header-left">MENU</div>
+        <div class="header-middle">VISUAL</br>EMOTION</div>
+        <div class="header-right">
+          <%= link_to "ABOUT", "#", class: "aboutlink" %>
+        </div>
+    </header>
+      <h1>美意識に、革命を。</h1>
+      <h2>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある。</h2>
+    </div>
+
+
+
   <div class="category">
 	<ul>
 	  <li>ART</li>

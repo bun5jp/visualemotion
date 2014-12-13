@@ -1,55 +1,96 @@
-title
-{
-	color: white;
+body{
+	margin: 0;
+	padding: 0;
+	
 }
-
-head
-{
-	color: white;
-}
-
-body
-{
-	background-image: image-url('background.png');
+.C{
+	background-image: image-url('bg_home01.jpg');
 	background-size: cover;
+	background-position: center;
+	height:600px;
+	width: 100%;
+
+}
+.header{
+	background-color: rgba(0,0,0,0.5);
+	height: 50px;
+	width:100%;
+	display:flex;
 	color: white;
-
 }
 
-.header-middle
-{
-}
+.header-left{
+	flex-grow:1;
 
-.header-left
-{
-	float: left;
-	padding: 20px 30px;
+	line-height: 50px;
 	font-size:30px bold;
-	margin-left: 50px;
+	text-align: center;
 }
 
-.header-right li
-{
-	float: right;
-	list-style: none;
-	padding: 20px 30px;
-	font-size:30px bold;
+.header-middle{
+	flex-grow:6;
+
+	line-height: 25px;
+	font-size:30px;
+	text-align: center;
+	letter-spacing:0;
+}
+.header-right{
+	flex-grow:1;
+
+	line-height: 50px;
+	font-size:30px bold;		
+	text-align: center;
+
+}
+.aboutlink{
+		text-decoration: none;
+	
 }
 
-h1
-{
-	font-size: 80px bold;
+
+
+h1{
+	font-size: 5rem;
 	color: white;
 	font-family: serif;
-	margin: 80px 100px;
-
+	text-align: center;
+	padding-left:100px;
+	margin: 0;
+	margin-top: 200px;
+}
+h2{
+	font-size: 1rem;
+	color: white;
+	font-family: serif;
+	text-align: center;
+	letter-spacing:10px;
+	margin: 0;
 }
 
-.category li
-{
-	list-style: none;
-	float: left;
-	padding: 20px;
-	font-size: 30px bold;
+
+
+
+//カテゴリー　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+
+.category{
+	height:200px;
+	width:100%;
+	display:flex;
+	background-color: red;
+
+ 	ul {
+ 		width: 1200px;
+ 		text-align: center;
+ 		margin: 0 auto;
+
+ 	} li{
+		list-style: none;
+		float: left;
 	
+		width: 25%;
+		text-align: center;
+
+		}
 }
