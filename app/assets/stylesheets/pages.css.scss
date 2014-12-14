@@ -74,39 +74,89 @@ margin: 0;
 //カテゴリー　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 
-.category{
+.fixedmenu{
 width: 300px;
 height: 100px;
-bottom: 20px;
-right: 30px;
+bottom: 10px;
+right: 10px;
 position: fixed;
-
 z-index: 100;
-background-color: rgba(0,0,0,0.3);
-border-radius: 10px;
+background-color: rgba(0,0,0,0.5);
+		.category{
+			width: 150px;
+			float: left;
+				p{
+					font-size: 20px;
+					display: block;
+					padding: 0px;
+					text-align: center;
+					color:white;
+					width: 150px;
+					line-height: 50px;
+
+				}
+			}
+
+		.sidemenu{
+			width: 100px;
+			float: left;
+				p{
+					font-size: 15px;
+					display: block;
+					float: left;
+					padding: 0px;
+					text-align: center;
+					color:white;
+					width: 100px;
+					line-height: 50px;
+				}
+			}
+
+		.go-home{
+			width: 50px;
+			float: left;
+			line-height: 50px;
+			color: white;
+			text-align: center;
+			display: block;
+
+		}
 	p{
+		height: 50px;
 		text-align: center;
+		color: white;
+		margin: 0;
+		margin-top: 0px;
 	}
 
 	ul {
-		text-align: center;
+		//text-align: center;
 		margin: 0 auto;
+		width: 300px;
+		height: 50px;
+		padding: 0px;
 		} 
- 	li{
-		list-style: none;
-		float: left;
-		text-align: center;
-			p{
-			font-size: 10px;
-			display: block;
-			transition-duration: 1s;
-			border-radius: 5px;
-				&:hover{
-					background-color: pink;
+	 	li{
+			list-style: none;
+			float: left;
+			padding: 0px;
+			text-align: center;
+			color:white;
+			width: 75px;
+			line-height: 50px;
+
+				p{
+				font-size: 10px;
+				display: block;
+				transition-duration: 1s;
+					&:hover{
+						background-color: pink;
+						}
 					}
-				}
+				
+			}
 		}
-	}
+
 
 
 
