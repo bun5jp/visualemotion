@@ -100,7 +100,8 @@ background-color: rgba(0,0,0,0.5);
 		.sidemenu{
 			width: 100px;
 			float: left;
-				p{
+			cursor: pointer;
+				div{
 					font-size: 15px;
 					display: block;
 					float: left;
