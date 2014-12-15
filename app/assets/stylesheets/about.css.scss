@@ -1,3 +1,24 @@
+h1
+{
+	background-image: image-url('about01.jpg');
+	background-size: cover;
+}
+
+h2 h3
+{
+	background-image: image-url('about02.jpg');
+	background-size: cover;
+}
+
+h3
+{
+	list-style: none;
+}
+
+
+
+
+
 // Place all the styles related to the About controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
