@@ -20,8 +20,16 @@ display:flex;
 color: white;
 }
 
+
+body
+{
+	background-image: image-url('background.jpg');
+	background-size: cover;
+	color: white;
+
 .header-left{
 flex-grow:1;
+
 
 line-height: 50px;
 font-size:20px;
