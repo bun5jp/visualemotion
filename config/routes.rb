@@ -4,13 +4,13 @@ Visualemotion::Application.routes.draw do
 
   resources :books
 
-  get 'about' => 'about#index'
+  get 'layouts/about' => 'about#index'
 
   get 'contact' => 'contacts#index'              # 入力画面
   post 'contact/confirm' => 'contacts#confirm'   # 確認画面
   post 'contact/thanks' => 'contacts#thanks'     # 送信完了画面
 
-  root "top#index"
+  get 'top' => 'top#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
