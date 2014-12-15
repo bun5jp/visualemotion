@@ -1,18 +1,4 @@
-<div class="go-home">
-  <i class="fa fa-arrow-circle-up"></i>
-</div>
-
-<nav>
-	<ul>
-    <li><P>ART</P></li>
-    <li><P>HUMAN</P></li>
-    <li><P>VIEW</P></li>
-    <li><P>OTHER</P></li>
-	</ul>
-</nav>
-</div>
-
-  <div class="testimage">
+  <div class="container testimage">
   <%= link_to image_tag('pic1.jpeg'), 'pic1.jpeg',:rel => "lightbox" %>
 
   <%= link_to image_tag('lightbox/pic1.jpeg'), :'data-lightbox' => "pic1" %>
@@ -36,40 +22,6 @@
   <a href="lightbox/pic19.jpeg" data-lightbox="pic19"></a>
   <a href="lightbox/pic20.jpeg" data-lightbox="pic20"></a>
   <a href="lightbox/pic.jpeg" data-lightbox="pic"></a> -->
-
   </div>
-
-
-
-  <section class="sidebar">
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-  </section>
-
-
-<%= yield %>
-
-<script>
-  $( ".sidebar" ).simpleSidebar({
-      settings: {
-        opener: ".button",
-        wrapper: ".wrapper",
-        animation: {
-          easing: "easeOutQuint"
-        }
-      },
-      sidebar: {
-        align: "right",
-        width: 300,
-        closingLinks: 'a',
-         style: {
-            zIndex: 100
-        }
-      }
-    });
-  </script>
 
 </html>
