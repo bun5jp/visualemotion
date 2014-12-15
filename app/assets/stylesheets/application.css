@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
+@import "normalize.css";
 @import "common.css";
 @import "books.css";
 @import "contacts.css";
-@import "about.css";
+/*@import "about.css";*/
 /*@import "scaffolds.css";
 */
 *= require css/lightbox
