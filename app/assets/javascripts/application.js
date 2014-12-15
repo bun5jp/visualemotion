@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$( ".sidebar" ).simpleSidebar({
+  sidebar: {
+    align: 'right' //'left' 
+  }
+});

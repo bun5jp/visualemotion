@@ -1,4 +1,8 @@
 Visualemotion::Application.routes.draw do
+  resources :contacts
+
+  resources :books
+
   get "pages/art"
   get "pages/about"
 

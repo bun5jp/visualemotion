@@ -5,30 +5,130 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="js/jquery.simplesidebar.js"></script>
+  <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?4XU2G~E0OwQ%3D" charset="utf-8"></script>
+  <script src="js/jquery.lightbox.js"></script>
+
+
 </head>
-  <div class="header">
-    <div class="header-middle">VISUALEMOTION</div>
-    <div class="header-left">MENU</div>
-    <div class="header-right">
-      <ul>
-        <li>HOME</li>
-      	<li>ABOUT</li>
-      </ul>
-    </div>
-  </div>
 <body>
-  <h1>美意識に、革命を。</h1>
-  <p>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある。</p>
-  <div class="category">
-	<ul>
-	  <li>ART</li>
-	  <li>HUMAN</li>
-	  <li>VIEW</li>
-	  <li>OTHER</li>
-	</ul>
+  <div class="wrapper">
+    <div class="C">
+      <header>
+        <div class="header">
+        <div class="header-left">
+        <i class="fa fa-bars"></i>
+         MENU</div>
+        <div class="header-middle">VISUAL</br>EMOTION</div>
+        <div class="header-right">
+          <%= link_to "ABOUT", "#", class: "aboutlink" %>
+        </div>
+    </header>
+      <h1>美意識に、革命を。</h1>
+      <h2>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある。</h2>
+    </div>
+
+
+
+  <div class="fixedmenu">
+
+    <div class="category">
+      <p>PhotoType</p>
+    </div>
+
+   
+    <div class="sidemenu">
+
+      <div class="toolbar">
+        <div id="open-sb" class="menu-icon menu-button menu-right">
+        <i class="fa fa-bars"></i>
+         MENU
+        </div>
+      </div>
+      
+    
   </div>
 
+    <div class="go-home">
+      <i class="fa fa-arrow-circle-up"></i>
+    </div>
+
+
+
+
+
+    
+    <nav>
+    	<ul>
+        <li><P>ART</P></li>
+        <li><P>HUMAN</P></li>
+        <li><P>VIEW</P></li>
+        <li><P>OTHER</P></li>
+    	</ul>
+    </nav>
+  </div>
+
+  <div class="testimage">
+  <%= link_to image_tag('ダウンロード (1).jpeg'), 'ダウンロード (1).jpeg',:rel => "lightbox" %>
+  <%= image_tag 'ダウンロード (1).jpeg' %>
+  <%= image_tag 'ダウンロード (2).jpeg' %>
+  <%= image_tag 'ダウンロード (3).jpeg' %>
+  <%= image_tag 'ダウンロード (4).jpeg' %>
+  <%= image_tag 'ダウンロード (5).jpeg' %>
+  <%= image_tag 'ダウンロード (6).jpeg' %>
+  <%= image_tag 'ダウンロード (7).jpeg' %>
+  <%= image_tag 'ダウンロード (8).jpeg' %>
+  <%= image_tag 'ダウンロード (9).jpeg' %>
+  <%= image_tag 'ダウンロード (10).jpeg' %>
+  <%= image_tag 'ダウンロード (11).jpeg' %>
+  <%= image_tag 'ダウンロード (12).jpeg' %>
+  <%= image_tag 'ダウンロード (13).jpeg' %>
+  <%= image_tag 'ダウンロード (14).jpeg' %>
+  <%= image_tag 'ダウンロード (15).jpeg' %>
+  <%= image_tag 'ダウンロード (16).jpeg' %>
+  <%= image_tag 'ダウンロード (17).jpeg' %>
+  <%= image_tag 'ダウンロード (18).jpeg' %>
+  <%= image_tag 'ダウンロード (19).jpeg' %>
+  <%= image_tag 'ダウンロード (20).jpeg' %>
+  <%= image_tag 'ダウンロード .jpeg' %>
+</div>
+ </div>
+
+
+
+  <section class="sidebar">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  </section>
+
+
 <%= yield %>
+
+<script>
+  $( ".sidebar" ).simpleSidebar({
+      settings: {
+        opener: ".button",
+        wrapper: ".wrapper",
+        animation: {
+          easing: "easeOutQuint"
+        }
+      },
+      sidebar: {
+        align: "right",
+        width: 300,
+        closingLinks: 'a',
+         style: {
+            zIndex: 100
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>

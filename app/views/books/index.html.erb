@@ -1,0 +1,41 @@
+<h1>Listing books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Image1</th>
+      <th>Image2</th>
+      <th>Image3</th>
+      <th>Amazon link</th>
+      <th>Category</th>
+      <th>Note</th>
+      <th>Del flg</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.image1 %></td>
+        <td><%= book.image2 %></td>
+        <td><%= book.image3 %></td>
+        <td><%= book.amazon_link %></td>
+        <td><%= book.category_id %></td>
+        <td><%= book.note %></td>
+        <td><%= book.del_flg %></td>
+        <td><%= link_to 'Show', book %></td>
+        <td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Book', new_book_path %>
