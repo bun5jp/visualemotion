@@ -25,7 +25,12 @@ class BooksController < ApplicationController
   # POST /books.json
   def create
     @book = Book.new(book_params)
-
+#   画像アップロード機能追加のために記述＝＝＝＝＝＝
+    file = params[:book][:image1]
+    file = params[:book][:image2]
+    file = params[:book][:image3]
+    @user.set_image(file)
+#  記述終わり＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     respond_to do |format|
       if @book.save
         format.html { redirect_to @book, notice: 'Book was successfully created.' }
@@ -40,6 +45,12 @@ class BooksController < ApplicationController
   # PATCH/PUT /books/1
   # PATCH/PUT /books/1.json
   def update
+    #   画像アップロード機能追加のために記述＝＝＝＝＝＝
+    file = params[:book][:image1]
+    file = params[:book][:image2]
+    file = params[:book][:image3]
+    @user.set_image(file)
+    #  記述終わり＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     respond_to do |format|
       if @book.update(book_params)
         format.html { redirect_to @book, notice: 'Book was successfully updated.' }
@@ -72,3 +83,19 @@ class BooksController < ApplicationController
       params.require(:book).permit(:title, :image1, :image2, :image3, :amazon_link, :category_id, :note, :del_flg)
     end
 end
+
+
+
+
+#　アップロード用の機能　
+
+def upload
+    file = params[:img]
+    name = file.original_filename
+ 
+    File.open("public/img/#{name}", 'wb') { |f|
+      f.write(file.read)
+    }
+ 
+    render nothing: true, status: 200
+  end
