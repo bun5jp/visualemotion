@@ -12,11 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
+=======
+//= require bootstrap
+>>>>>>> 0e3a315320f4ea84fe3f117035d04287d17ca429
 //= require js/lightbox
 //= require turbolinks
 //= require_tree .
-$( ".sidebar" ).simpleSidebar({
-  sidebar: {
-    align: 'right' //'left' 
-  }
-});

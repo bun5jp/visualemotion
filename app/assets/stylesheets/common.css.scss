@@ -1,0 +1,170 @@
+$font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+@import "bootstrap.min.css";
+
+/* Global Layout
+-------------------------------*/
+body{
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  font-style:normal;
+  text-decoration:underline;
+}
+h1{
+  font-size: 5rem;
+  color: white;
+  font-family: serif;
+  text-align: center;
+  padding-left:100px;
+  margin: 0;
+  margin-top: 100px;
+}
+h2{
+  font-size: 1rem;
+  color: white;
+  font-family: serif;
+  text-align: center;
+  letter-spacing:10px;
+  margin-top: 66px;
+}
+
+ p{
+    height: 50px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 0px;
+  }
+
+ul {
+  //text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  padding: 0px;
+  } 
+  li{
+    list-style: none;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    color:white;
+    width: 75px;
+    line-height: 50px;
+    p{
+    font-size: 10px;
+    display: block;
+    transition-duration: 1s;
+    &:hover{
+      background-color: pink;
+    }
+  }
+}
+
+.container {
+  max-width: 1336px;
+}
+/* Navigation
+-------------------------------*/
+.header{
+  background-color: rgba(0,0,0,0.2);
+  height: 50px;
+  width:100%;
+  display:flex;
+  color: white;
+}
+.header-left{
+  flex-grow:1;
+  line-height: 50px;
+  font-size:20px;
+  text-align: center;
+}
+.header-middle{
+  flex-grow:6;
+  line-height: 25px;
+  font-size:30px;
+  text-align: center;
+  letter-spacing:0;
+}
+.header-right{
+  flex-grow:1;
+  line-height: 50px;
+  font-size:20px;   
+  text-align: center;
+}
+
+/* First View
+-------------------------------*/
+.firstview{
+  background-image: image-url('bg_home01.jpg');
+  background-size: cover;
+  background-position: center;
+  height:550px;
+  width: 100%;
+  color: #fff;
+}
+
+/* Side Navigation
+-------------------------------*/
+.sidemenu{
+  width: 100px;
+  float: left;
+  cursor: pointer;
+  div{
+    font-size: 15px;
+    display: block;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    color:white;
+    width: 100px;
+    line-height: 50px;
+  }
+}
+
+/* Go Home Navigation
+-------------------------------*/
+.go-home{
+  width: 50px;
+  float: left;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+/* Category
+-------------------------------*/
+.fixedmenu{
+  width: 300px;
+  height: 100px;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.5);
+  .category{
+    width: 150px;
+    float: left;
+    p{
+      font-size: 20px;
+      display: block;
+      padding: 0px;
+      text-align: center;
+      color:white;
+      width: 150px;
+      line-height: 50px;
+    }
+  }
+}
+
+/* Books 
+-------------------------------*/
+.testimage {
+text-align: center;
+  img{
+  margin: 10px
+  }
+}
