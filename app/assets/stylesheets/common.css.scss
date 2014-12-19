@@ -101,9 +101,19 @@ ul {
   background-image: image-url('bg_home01.jpg');
   background-size: cover;
   background-position: center;
-  height:650px;
+  height:550px;
   width: 100%;
   color: #fff;
+}
+.viewlogo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+   img{
+    height: 50%;
+    width: 50%;
+   }
+
 }
 
 /* Side Navigation
@@ -112,6 +122,12 @@ ul {
   width: 100px;
   float: left;
   cursor: pointer;
+  transition-duration: 1s;
+
+  &:hover{
+        border-radius: 10px;
+        background-color: pink;
+        }
   div{
     font-size: 15px;
     display: block;
@@ -123,6 +139,11 @@ ul {
     line-height: 50px;
   }
 }
+.fa{
+  color: black;
+   
+}
+
 
 
 /* Go Home Navigation
@@ -131,11 +152,15 @@ ul {
   width: 50px;
   float: left;
   line-height: 50px;
-  color: white;
+  color: black;
   text-align: center;
   display: block;
-
+  transition-duration: 1s;
   font-size: 1rem;
+   &:hover{
+        border-radius: 10px;
+        background-color: pink;
+        }
 }
 
 /* Category
@@ -147,21 +172,24 @@ ul {
   right: 10px;
   position: fixed;
   z-index: 100;
-  background-color: rgba(0,0,0,0.7);
+  //background-color: rgba(0,0,0,0.7);
   .category{
     width: 150px;
     float: left;
+    display: block;
+
     p{
       font-size: 20px;
       display: block;
       padding: 0px;
       text-align: center;
-      color:white;
+      color:black;
       width: 150px;
       line-height: 50px;
     }
   }
 }
+
 
 
 ul {
@@ -175,14 +203,16 @@ ul {
     float: left;
     padding: 0px;
     text-align: center;
-    color:white;
     width: 75px;
     line-height: 50px;
     p{
+    cursor: pointer;
     font-size: 10px;
     display: block;
     transition-duration: 1s;
+    color:black;
       &:hover{
+        border-radius: 10px;
         background-color: pink;
         }
       }
