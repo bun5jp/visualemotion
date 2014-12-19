@@ -1,16 +1,15 @@
 Visualemotion::Application.routes.draw do
 
   get "law/law"
-  get "about/about"
 
   # get "about/index"
   resources :contacts
   resources :books
   resources :tops
-  resources :abouts
+  # resources :abouts
 
 
-  get 'layouts/about' => 'about#index'
+  get 'about' => 'layouts#about'
   get 'law' => 'law'
 
   get 'contact' => 'contacts#index'              # 入力画面
