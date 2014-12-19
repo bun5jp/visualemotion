@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualemotion</title>
+  <%= stylesheet_link_tag    'about', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'about', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<%= link_to 'HOME', 'top' %>
+
+<body>
+  <h1>本×写真=写真集</h1>
+  <p>
+    <span>写真家たちが切り取った世界の一端</span>
+    <br>
+    <span>それらはあなたの感性に</span>
+    <br>
+    <span>衝撃を与える。</span>
+  </p>
+
+  <h2>MORE INFO</h2>
+  <p>
+    <span>本サイトで一目見て気になった写真</span>
+    <br>
+    <span>それはきっとあなたの感性が求めている</span>
+    <br>
+    <span>新しい世界への扉です。</span>
+  </p>
+
+  <h3>SITE MAKER</h3>
+  <ul>
+    <li>BUNGO NAKAMURA - Designer</li>
+    <li>MICHI KANDA - Mentor</li>
+    <li>MAYA KATAGIRI - Engineer/<li>
+  </ul>
+
+
+<%= link_to '利用規約', 'law' %>
+
+
+<%= yield %>
+
+</body>
+</html>

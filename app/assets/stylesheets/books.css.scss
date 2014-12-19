@@ -1,3 +1,23 @@
 // Place all the styles related to the Books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.field{
+	text-align: center;
+	margin: 20px;
+}
+input{
+	width: 300px;
+	height: 70px;
+	border-radius: 10px;
+	margin: 0 auto;
+
+
+}
+.actions{
+	text-align: center;
+}
