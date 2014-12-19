@@ -1,9 +1,9 @@
 
-  <body id="wrapper">
-      <div class="firstview">
-      </div>
-      <div class="viewlogo">
-        <%= image_tag 'logo.png' %>
+<body id="wrapper">
+  <div class="firstview">
+  </div>
+  <div class="viewlogo">
+    <%= image_tag 'logo.png' %>
 
 <!--  デザイン変更
         <header>
@@ -20,21 +20,17 @@
         <h1>美意識に、革命を。</h1>
         <h2>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある。</h2>
       -->
-      </div>
-
-        <%= yield %>
-
-
-
-
-<!--固定メニューバー-->
+    </div>
+    <!--固定メニューバー-->
     <div class="fixedmenu">
       <div class="sidemenu">
-        <div class="navbar">
-          <div id="open-sb" class="menu-icon menu-button menu-right">
-            <i class="fa fa-bars">MENU</i>
-          </div>
-        </div>
+       
+          <section class="navbar">
+            <div id="open-sb" class="menu-icon menu-button menu-right">
+              <i class="fa fa-bars">Menu</i>
+            </div>
+          </section>
+       
       </div>
 
       <div class="category">
@@ -48,21 +44,49 @@
         <li><P>OTHER</P></li>
       </ul>
     </div>
-<!--  メニューバー終了　-->
+    <!--  メニューバー終了　-->
 
 
+       
+<section class="sidebar">
+  <li><a><i class="fa fa-times-circle-o"></i></a></li>
+
+  <nav>
+  <p>MENU</p>
+  <ul>
+    <li><%= link_to 'Home', 'top' %></li>
+    <li><%= link_to 'About', 'about' %></li>
+    <li><%= link_to 'Category+', '#' %></li>
+    <li><%= link_to 'Request', 'contact' %></li>
+    <li><%= link_to 'Blog', '#' %></li>
+  </ul>
+  </nav>  
+</section>
 
 
+   
+    <div class="container testimage">
+    </div>
+
+<!--  ここから共通素材　-->
+ <%= yield %>
+
+ <script>
+  $( ".sidebar" ).simpleSidebar({
+      settings: {
+        opener: "#open-sb",
+        wrapper: ".wrapper",
+        animation: {
+          easing: "easeOutQuint"
+        }
+      },
+      sidebar: {
+        align: "left",
+        width: 310,
+        closingLinks: 'a',
+      }
 
 
+    });
 
-
-
-<div class="container testimage">
-
-
-
-  </div>
-
-
-</html>
+  </script>

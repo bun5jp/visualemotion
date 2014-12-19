@@ -1,4 +1,4 @@
-$font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$font-family:'Raleway', sans-serif, "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
 @import "bootstrap.min.css";
 
@@ -7,6 +7,9 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
 body{
   margin: 0;
   padding: 0;
+  height: 3000px;
+  font-family:'Raleway', sans-serif, "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
 }
 a:link {
   font-style:normal;
@@ -54,11 +57,11 @@ ul {
     width: 75px;
     line-height: 50px;
     p{
-    font-size: 10px;
+    font-size: 20px;
     display: block;
     transition-duration: 1s;
     &:hover{
-      background-color: pink;
+      background-color: #f8ced0;
     }
   }
 }
@@ -103,7 +106,6 @@ ul {
   background-position: center;
   height:550px;
   width: 100%;
-  color: #fff;
 }
 .viewlogo{
   position: absolute;
@@ -124,11 +126,11 @@ ul {
   cursor: pointer;
   transition-duration: 1s;
   text-align: center;
-  margin: 0auto;
+  margin: 0 auto;
 
   &:hover{
         border-radius: 10px;
-        background-color: pink;
+        background-color: #f8ced0;
         }
   div{
     font-size: 20px;
@@ -143,8 +145,7 @@ ul {
 }
 .fa{
   color: black;
-  padding-left:35px; 
-   
+  padding-left:35px;
 }
 
 
@@ -162,7 +163,7 @@ ul {
   font-size: 1rem;
    &:hover{
         border-radius: 10px;
-        background-color: pink;
+        background-color: #f8ced0;
         }
 }
 
@@ -183,7 +184,7 @@ ul {
     transition-duration: 1s;
    &:hover{
         border-radius: 10px;
-        background-color: pink;
+        background-color: #f8ced0;
         }
 
     a{
@@ -216,17 +217,75 @@ ul {
     line-height: 50px;
     p{
     cursor: pointer;
-    font-size: 10px;
+    font-size: 15px;
     display: block;
     transition-duration: 1s;
     color:black;
       &:hover{
         border-radius: 10px;
-        background-color: pink;
+        background-color: #f8ced0;
         }
       }
     }
 }
+
+/* sidebar
+-------------------------------*/
+  .sidebar{
+    background-color: #f8ced0;
+    li > a >.fa{
+      display: block;
+      cursor: pointer;
+      font-size: 2rem;
+      color: gray;
+      margin: 10px 0px 10px 230px;
+      transition-duration: 1s;
+      &:hover{
+        color: white;
+      }
+    
+    }
+    nav{
+      clear: both;
+      width: 270px;
+      text-align: left;
+      p{
+        font-size: 2rem;
+        color:red;
+        text-align: left;
+        letter-spacing: 3px;
+        padding-left: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+      }
+      ul{
+        li{
+          width: 270px;
+          height: 49px;
+          border-bottom: 1px solid white;
+          text-align: left;
+          padding-left: 40px;
+          transition-duration: 1s;
+
+           &:hover{
+              background-color: white;
+            }
+
+          a{
+            font-size: 26px;
+            color: black;
+            text-decoration: none;
+            letter-spacing: 3px;
+            line-height: 50px;
+            display: block;
+
+           
+
+          }
+        }
+      }
+    }
+  }
 
 /* Books 
 -------------------------------*/
