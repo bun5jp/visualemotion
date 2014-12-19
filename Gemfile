@@ -10,6 +10,7 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+gem 'paperclip'
 gem 'font-awesome-sass';
 
 group :development do

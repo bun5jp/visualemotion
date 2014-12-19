@@ -25,11 +25,10 @@ class BooksController < ApplicationController
   # POST /books.json
   def create
     @book = Book.new(book_params)
-#   画像アップロード機能追加のために記述＝＝＝＝＝＝
-    file = params[:book][:image1]
-    file = params[:book][:image2]
-    file = params[:book][:image3]
-    @user.set_image(file)
+#  画像アップロード機能追加のために記述＝＝＝＝＝＝
+  # file = params[:book][:image2]
+  #  file = params[:book][:image3]
+  #  @user.set_image(file)
 #  記述終わり＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     respond_to do |format|
       if @book.save

@@ -1,12 +1,12 @@
 Visualemotion::Application.routes.draw do
   # get "about/index"
   resources :contacts
-
   resources :books
   resources :tops
+  resources :abouts
 
 
-  get 'layouts/about' => 'about#index'
+  get 'about' => 'about'
 
   get 'contact' => 'contacts#index'              # 入力画面
   post 'contact/confirm' => 'contacts#confirm'   # 確認画面

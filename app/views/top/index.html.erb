@@ -1,5 +1,10 @@
-  <div class="container testimage">
-  <%= link_to image_tag('pic1.jpeg'), 'pic1.jpeg',:rel => "lightbox" %>
+<div class="container testimage">
+<%= link_to image_tag('pic1.jpeg'), 'pic1.jpeg',:rel => "lightbox" %>
+
+<%= link_to image_tag('pic1.jpeg'), books_path %>
+
+
+
 
   <%= link_to image_tag('lightbox/pic1.jpeg'), :'data-lightbox' => "pic1" %>
 <!--   <a href="lightbox/pic2.jpeg" data-lightbox="pic2"></a>
@@ -25,3 +30,5 @@
   </div>
 
 </html>
+
+books_path
