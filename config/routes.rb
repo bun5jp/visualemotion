@@ -6,6 +6,7 @@ Visualemotion::Application.routes.draw do
   resources :contacts
   resources :books
   resources :tops
+  resources :abouts
   # resources :abouts
 
 
