@@ -1,4 +1,5 @@
 Visualemotion::Application.routes.draw do
+  get "law/law"
   get "about/about"
   # get "about/index"
   resources :contacts
@@ -8,6 +9,7 @@ Visualemotion::Application.routes.draw do
 
 
   get 'about' => 'about'
+  get 'law' => 'law'
 
   get 'contact' => 'contacts#index'              # 入力画面
   post 'contact/confirm' => 'contacts#confirm'   # 確認画面
