@@ -97,19 +97,13 @@ background-color: rgba(0,0,0,0.5);
 
 .sidemenu{
   width: 100px;
+  height: 50px;
   float: left;
   cursor: pointer;
-    div{
-      font-size: 15px;
-      display: block;
-      float: left;
-      padding: 0px;
-      text-align: center;
-      color:white;
-      width: 100px;
-      line-height: 50px;
-    }
   }
+.navber{
+  margin-bottom: 0px;
+}
 
 .go-home{
   width: 50px;
