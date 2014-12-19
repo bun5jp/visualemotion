@@ -1,4 +1,5 @@
 Visualemotion::Application.routes.draw do
+  get "about/about"
   # get "about/index"
   resources :contacts
   resources :books

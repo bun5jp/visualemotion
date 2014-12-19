@@ -119,17 +119,19 @@ ul {
 /* Side Navigation
 -------------------------------*/
 .sidemenu{
-  width: 100px;
+  width: 150px;
   float: left;
   cursor: pointer;
   transition-duration: 1s;
+  text-align: center;
+  margin: 0auto;
 
   &:hover{
         border-radius: 10px;
         background-color: pink;
         }
   div{
-    font-size: 15px;
+    font-size: 20px;
     display: block;
     float: left;
     padding: 0px;
@@ -141,6 +143,7 @@ ul {
 }
 .fa{
   color: black;
+  padding-left:35px; 
    
 }
 
@@ -174,18 +177,24 @@ ul {
   z-index: 100;
   //background-color: rgba(0,0,0,0.7);
   .category{
-    width: 150px;
+    width: 100px;
     float: left;
     display: block;
+    transition-duration: 1s;
+   &:hover{
+        border-radius: 10px;
+        background-color: pink;
+        }
 
-    p{
-      font-size: 20px;
+    a{
+      font-size: 18px;
       display: block;
       padding: 0px;
       text-align: center;
       color:black;
-      width: 150px;
       line-height: 50px;
+      font-style: bold;
+      text-decoration: none;
     }
   }
 }

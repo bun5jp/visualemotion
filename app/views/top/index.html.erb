@@ -1,16 +1,44 @@
-<!--固定メニューバー-->
-    <div class="fixedmenu">
 
-      <div class="category">
-        <p>PhotoType</p>
+  <body id="wrapper">
+      <div class="firstview">
+      </div>
+      <div class="viewlogo">
+        <%= image_tag 'logo.png' %>
+
+<!--  デザイン変更
+        <header>
+          <div class="header">
+            <div class="header-left">
+              <i class="fa fa-bars">MENU</i>
+            </div>
+              <div class="header-middle">VISUAL</br>EMOTION
+              </div>
+              <div class="header-right">
+              </div>
+          </div>
+         </header>
+        <h1>美意識に、革命を。</h1>
+        <h2>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある。</h2>
+      -->
       </div>
 
+        <%= yield %>
+
+
+
+
+<!--固定メニューバー-->
+    <div class="fixedmenu">
       <div class="sidemenu">
         <div class="navbar">
           <div id="open-sb" class="menu-icon menu-button menu-right">
             <i class="fa fa-bars">MENU</i>
           </div>
         </div>
+      </div>
+
+      <div class="category">
+        <%= link_to 'ABOUT', 'about' %>
       </div>
       <div class ="go-home">↑</div>
       <ul>
@@ -32,34 +60,8 @@
 
 <div class="container testimage">
 
-<%= link_to image_tag('pic1.jpeg'), 'pic1.jpeg',:rel => "lightbox" %>
-
-<%= link_to image_tag('pic1.jpeg'), books_path %>
 
 
-
-
-  <%= link_to image_tag('lightbox/pic1.jpeg'), :'data-lightbox' => "pic1" %>
-<!--   <a href="lightbox/pic2.jpeg" data-lightbox="pic2"></a>
-  <a href="lightbox/pic3.jpeg" data-lightbox="pic3"></a>
-  <a href="lightbox/pic4.jpeg" data-lightbox="pic4"></a>
-  <a href="lightbox/pic5.jpeg" data-lightbox="pic5"></a>
-  <a href="lightbox/pic6.jpeg" data-lightbox="pic6"></a>
-  <a href="lightbox/pic7.jpeg" data-lightbox="pic7"></a>
-  <a href="lightbox/pic8.jpeg" data-lightbox="pic8"></a>
-  <a href="lightbox/pic9.jpeg" data-lightbox="pic9"></a>
-  <a href="lightbox/pic10.jpeg" data-lightbox="pic10"></a>
-  <a href="lightbox/pic11.jpeg" data-lightbox="pic11"></a>
-  <a href="lightbox/pic12.jpeg" data-lightbox="pic12"></a>
-  <a href="lightbox/pic13.jpeg" data-lightbox="pic13"></a>
-  <a href="lightbox/pic14.jpeg" data-lightbox="pic14"></a>
-  <a href="lightbox/pic15.jpeg" data-lightbox="pic15"></a>
-  <a href="lightbox/pic16.jpeg" data-lightbox="pic16"></a>
-  <a href="lightbox/pic17.jpeg" data-lightbox="pic17"></a>
-  <a href="lightbox/pic18.jpeg" data-lightbox="pic18"></a>
-  <a href="lightbox/pic19.jpeg" data-lightbox="pic19"></a>
-  <a href="lightbox/pic20.jpeg" data-lightbox="pic20"></a>
-  <a href="lightbox/pic.jpeg" data-lightbox="pic"></a> -->
   </div>
 
 
