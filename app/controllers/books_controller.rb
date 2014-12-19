@@ -26,9 +26,10 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
 #  画像アップロード機能追加のために記述＝＝＝＝＝＝
-  # file = params[:book][:image2]
-  #  file = params[:book][:image3]
-  #  @user.set_image(file)
+  file1 = params[:book][:image1]
+  file2 = params[:book][:image2]
+  file3 = params[:book][:image3]
+  @book.set_image(file1, file2, file3)
 #  記述終わり＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     respond_to do |format|
       if @book.save
@@ -45,10 +46,10 @@ class BooksController < ApplicationController
   # PATCH/PUT /books/1.json
   def update
     #   画像アップロード機能追加のために記述＝＝＝＝＝＝
-    file = params[:book][:image1]
-    file = params[:book][:image2]
-    file = params[:book][:image3]
-    @user.set_image(file)
+  file1 = params[:book][:image1]
+  file2 = params[:book][:image2]
+  file3 = params[:book][:image3]
+  @book.set_image(file1, file2, file3)
     #  記述終わり＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     respond_to do |format|
       if @book.update(book_params)

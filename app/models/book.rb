@@ -1,46 +1,29 @@
 class Book < ActiveRecord::Base
 belongs_to :category
 
-validates :title, presence: true,
+ def set_image(file1, file2, file3)
+    if !file1.nil?
+      file1_name = file1.original_filename
+      
+      File.open("public/docs/#{file1_name}", 'wb'){|f| f.write(file1.read)}
+      self.image1 = file1_name
+    end
 
+    if !file2.nil?
+      file2_name = file2.original_filename
+      
+      File.open("public/docs/#{file2_name}", 'wb'){|f| f.write(file2.read)}
+      self.image2 = file2_name
+    end
 
+    if !file3.nil?
+      file3_name = file3.original_filename
+      
+      File.open("public/docs/#{file3_name}", 'wb'){|f| f.write(file3.read)}
+      self.image3 = file3_name
+    end
 
+  end
 
-#　画像セットアップ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-#＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-def self.up
-	change_table :books do |t|
-		t.attachment :image1
-	end
-end
-
-def self.down
-	remove_attachment :books, :image1
-end
-
-
-
-def self.up
-	change_table :books do |t|
-		t.attachment :image2
-	end
-end
-def self.down
-	remove_attachment :books, :image2
-end
-
-
-
-def self.up
-	change_table :books do |t|
-		t.attachment :image3
-	end
-end
-def self.down
-	remove_attachment :books, :image3
-end
-
-#========================================
 
 end
