@@ -1,3 +1,10 @@
-// Place all the styles related to the Contacts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+@charset "UTF-8";
+
+.body{
+  background-image: image-url('contact.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  color: black;
+}

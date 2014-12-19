@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Visualemotion</title>
-  <%= stylesheet_link_tag    'about', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'about', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+   <title>Visualemotion</title>
+   <%= stylesheet_link_tag    'about', media: 'all', 'data-turbolinks-track' => true %>
+   <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => true %>
+   <%= csrf_meta_tags %>
+
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?4XU2G~E0OwQ%3D" charset="utf-8"></script>
 </head>
 
 <body>
-  <h1>本×写真=写真集</h1>
-  <p>
-    <span>写真家たちが切り取った世界の一端</span>
-    <br>
-    <span>それらはあなたの感性に</span>
-    <br>
-    <span>衝撃を与える。</span>
-  </p>
+  <div class="message1">
+    <div class="m1-blackbox">
+      <div class="message-header">ABOUT</div>
+      <div class="m1-body">
+        <div class="m1-phrase">本×写真=写真集</div><br><br>
+        写真家たちが切り取った世界の一端<br>
+        それらはあなたの感性に<br>
+        <span>衝撃を与える。</span><br><br>
+        本サイトで一目見て気になった写真<br>
+        それはきっとあなたの感性が求めている<br>
+        <span>新しい世界への扉です。</span>
+      </div>
+    </div>
+  </div>
 
-  <h2>MORE INFO</h2>
-  <p>
-    <span>本サイトで一目見て気になった写真</span>
-    <br>
-    <span>それはきっとあなたの感性が求めている</span>
-    <br>
-    <span>新しい世界への扉です。</span>
-  </p>
+
+  <div class="message2">
+    <div class="m2-blackbox"><br>
+      <div class="message-header">MORE INFO</div>
+      <div class="m2-body">
+        VISUALEMOTIONは、写真集を感性で選ぶサイトです。<br>
+        スクロールする中で直感を揺さぶる不寿あるがあった時、<br>
+        それは新しい世界との出会いなのです。<br>
+        写真集、アーティスト、クリエイター、彼らが感性を研ぎすませ作り上げた本。<br>
+        それらの中には必ず、あなたの感覚に革命を与えるビジュアルがあるはずです。<br>
+        あなたと見知らぬ写真集の出会いがあらんことを。<br><br>
+        このサイトの目標はただ一つ。あなたの<br>
+        <div class="m2-phrase">美意識に革命を。</div><br>
+      </div>
+      <div id="site-maker">
+        <div class="message-header">SITE MAKER</div>
+          <ul>
+            <li><font color="#00bfff"> BUNGO NAKAMURA</font> - Designer</li>
+            <li><font color="#90ee90"> MICHI KANDA</font> - Mentor</li>
+            <li><font color="pink"> MAYA KATAGIRI</font> - Engineer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <h3>SITE MAKER</h3>
   <ul>
@@ -32,6 +58,7 @@
     <li>MICHI KANDA - Mentor</li>
     <li>MAYA KATAGIRI - Engineer/<li>
   </ul>
+
 
 <%= yield %>
 

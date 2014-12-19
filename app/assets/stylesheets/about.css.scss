@@ -1,7 +1,107 @@
+$font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+@charset "UTF-8";
+
+/* message1 ABOUT
+-------------------------------*/
+
+.message1{
+  background-image: image-url('about1.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  height: 800px;
+  width: 100%;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.m1-blackbox{
+  background-color: rgba(0,0,0,0.7);
+  background-position: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 50px 50px;
+  background-size: 200px 150px;
+  // padding: 20px 200px;
+  // width: 50%;
+  // height: 50%;
+}
+
+.m1-phrase{
+  font-size: 4rem;
+  // padding-bottom: 30px;
+  font-family: serif;
+}
+
+.m1-body{
+  font-size: 1rem;
+  font-family: serif;
+}
+
+span{
+  font-size: 2rem;
+}
+
+/* message2 MORE INFO
+-------------------------------*/
+
+.message2{
+  background-image: image-url('about2.jpg');
+  background-size: cover;
+  color: white;
+  background-attachment: scroll;
+  height: 800px;
+  width: 100%;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.m2-blackbox{
+  background-color: rgba(0,0,0,0.7);
+  background-position: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 50px 50px;
+  background-size: 200px 150px;
+}
+
+.m2-body{
+  font-family: serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.m2-phrase{
+  font-size: 4rem;
+  line-height: normal;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/* message1 and 2 
+-------------------------------*/
+
+.message-header{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 30px;  
+  padding-bottom: 30px;
+}
+
+
+/* SITE MAKER
+-------------------------------*/
+
+
+
+
+// Place all the styles related to the About controller here.
 // Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-	background-color:black; 
-}
+
