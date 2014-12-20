@@ -1,30 +1,38 @@
-<div class="page-header">
-  <h1>お問い合わせ</h1>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visualemotion</title>
+    <%= stylesheet_link_tag    'contacts', media: 'all', 'data-turbolinks-track' => true %>
+
+    <div class="page-header">
+      <h1>CONTACT</h1>
+      <br>  
+      <br>
+    </div>
+  </head>
  
-<%= form_for @contact, :url => contact_thanks_path do |f| %>
-  <table class="table">
-    <tr>
-      <th>名前</th>
-      <td>
-        <%= f.hidden_field :name %>
-        <%= @contact.name %>
-      </td>
-    </tr>
-    <tr>
-      <th>メールアドレス</th>
-      <td>
-        <%= f.hidden_field :email %>
-        <%= @contact.email %>
-      </td>
-    </tr>
-    <tr>
-      <th>お問い合わせ内容</th>
-      <td>
-        <%= f.hidden_field :message %>
-        <%= simple_format(@contact.message) %>
-      </td>
-    </tr>
-  </table>
-  <%= f.submit '送信', :class => 'btn btn-primary' %>
+  <body>
+  <%= form_for @contact, :url => contact_thanks_path do |f| %>
+    <p>NAME</p>
+    <%= f.hidden_field :name %>
+    <span><%= @contact.name %><span>
+    <br>  
+    <br>
+    <p>EMAIL</p>
+    <%= f.hidden_field :email %>
+    <span><%= @contact.email %><span>
+    <br>  
+    <br>
+    <p>MESSAGE</p>
+    <%= f.hidden_field :message %>
+    <span><%= simple_format(@contact.message) %><span>
+    <br>  
+    <br>
+  </body>
+</html>
+  
+  <%= f.submit 'SEND!', disable_with: "SENDING..." %>
+ <!--  <%= f.submit 'SEND!', :class => 'btn btn-primary' %> -->
+
 <% end %>
+  
