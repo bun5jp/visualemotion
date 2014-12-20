@@ -121,7 +121,7 @@ ul {
 /* Side Navigation
 -------------------------------*/
 .sidemenu{
-  width: 150px;
+  width: 125px;
   float: left;
   cursor: pointer;
   transition-duration: 1s;
@@ -145,7 +145,7 @@ ul {
 }
 .fa{
   color: black;
-  padding-left:35px;
+  padding-left:20px;
 }
 
 
@@ -178,7 +178,7 @@ ul {
   z-index: 100;
   //background-color: rgba(0,0,0,0.7);
   .category{
-    width: 100px;
+    width: 125px;
     float: left;
     display: block;
     transition-duration: 1s;
