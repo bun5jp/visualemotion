@@ -4,50 +4,71 @@
    <title>Visualemotion</title>
    <%= stylesheet_link_tag    'contacts', media: 'all', 'data-turbolinks-track' => true %>
    <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => true %>
-   <%= csrf_meta_tags %>
+<!--    <%= csrf_meta_tags %>
 
-   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-   <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?4XU2G~E0OwQ%3D" charset="utf-8"></script>
+<!--    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<!--    // <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?4XU2G~E0OwQ%3D" charset="utf-8"></script> -->
 </head>
 
 
 <%= form_for @contact, :url => contact_confirm_path do |f| %>
+
   <div class="page-header">
-    <h1>お問い合わせ</h1>
+    <h1>CONTACT</h1>
   </div>
  
   <% if @contact.errors.any? %>
     <div class="alert alert-danger" role="alert">
-      <strong>入力内容にエラーがあります</strong>
+      <p>入力内容にエラーがあります</p>
       <ul>
         <% @contact.errors.each do |attr, msg| %>
-          <li><%= msg %></li>
+　　　　　<li><%= msg %></li>
         <% end %>
       </ul>
     </div>
+
+<br>
+<br>
+<br>
+
   <% end %>
  
+<br>
+<br>
+
 
 <body>
-  <h1>お問い合わせ</h1>
-  <table class="table">
-    <tr>
-      <th>名前<span class="text-danger">（必須）</span></th>
-      <td><%= f.text_field :name %></td>
-    </tr>
-    <tr>
-      <th>メールアドレス<span class="text-danger">（必須）</span></th>
-      <td><%= f.text_field :email %></td>
-    </tr>
-    <tr>
-      <th>お問い合わせ内容</th>
-      <td><%= f.text_area :message %></td>
-    </tr>
-  </table>
+  <br>
+  <p>NAME</p>
+  <%= f.hidden_field :name %>
+  <%= f.text_field :name, :class=>"text" %>
+  <br>
+  <br>
+  <p>EMAIL</p>
+  <%= f.hidden_field :email %>
+  <%= f.text_field :email, :class=>"text" %>
+  <br>  
+  <br>
+  <p>MESSAGE</p>
+  <%= f.hidden_field :message %>
+  <%= f.text_area :message, :class=>"text", :size=>"40x10" %>
+  <br>
+  <br>
 </body>
-<html>
 
-  <%= f.submit '確認', class: 'btn btn-primary' %>
+<html>
+  
+  <br>
+  <br>
+
+  <div id="box"><%= f.submit 'CONFIRM' %></div>
+
+<!--   <input type="submit" value="CONFIRM">
+<!--   <%= f.submit 'CONFIRM', class: 'btn btn-primary' %> -->
+
+<br>
+<br>
+<br>
 <% end %>
 
 

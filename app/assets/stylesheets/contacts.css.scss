@@ -1,10 +1,73 @@
-$font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
 @charset "UTF-8";
 
-.body{
+/* Common Layout For Contacts
+-------------------------------*/
+
+body{
   background-image: image-url('contact.jpg');
   background-size: cover;
   background-attachment: scroll;
-  color: black;
+  text-align: center;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+
 }
+
+h1{
+  font-size: 4rem;
+  color: black;
+  text-align: left;
+  margin-left: 420px;
+}
+
+.box{
+  border: none;
+  box-shadow: none;
+  font-size: 1.5rem;
+}
+
+/* Index
+-------------------------------*/
+
+p{
+ font-size: 1.5rem;
+ color: black;
+ font-weight: bold;
+}
+
+.text{
+  font-size: 1rem;
+  // padding: 0;
+  border: none;
+  // margin: 0;
+  // line-height: 30px !important;
+  }
+
+li{
+ list-style-type: none;
+ color: black;
+ float: none;
+}
+
+/* Confirm
+-------------------------------*/
+
+span{
+  font-size: 1rem;
+  // background-color: white;
+}
+
+
+
+// .header{
+//   float: center;
+//   background-color: none;
+//   color: black;
+// }
+
+// .text{
+//   width: 100px;
+//   height: 50px;
+//   float: center;
+// }
+

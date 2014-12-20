@@ -134,7 +134,7 @@ input::-moz-focus-inner {
   border: 0;
 }
 input {
-  line-height: normal;
+/*  line-height: normal;*/
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -264,7 +264,7 @@ html {
 }
 body {
   font-size: 14px;
-  line-height: 1.428571429;
+ /* line-height: 1.428571429;*/
   color: #333;
 }
 input,
@@ -273,7 +273,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
+/*  line-height: inherit;*/
 }
 a {
   color: #428bca;
@@ -307,7 +307,7 @@ img {
   max-width: 100%;
   height: auto;
   padding: 4px;
-  line-height: 1.428571429;
+/*  line-height: 1.428571429;*/
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -617,7 +617,7 @@ blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
-  line-height: 1.428571429;
+/*  line-height: 1.428571429;*/
   color: #999;
 }
 blockquote footer:before,
@@ -656,7 +656,7 @@ blockquote:after {
 address {
   margin-bottom: 20px;
   font-style: normal;
-  line-height: 1.428571429;
+/*  line-height: 1.428571429;*/
 }
 code,
 kbd,
@@ -685,7 +685,7 @@ pre {
   padding: 9.5px;
   margin: 0 0 10px;
   font-size: 13px;
-  line-height: 1.428571429;
+/*  line-height: 1.428571429;*/
   color: #333;
   word-break: break-all;
   word-wrap: break-word;
@@ -1390,7 +1390,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.428571429;
+/*  line-height: 1.428571429;*/
   border-top: 1px solid #ddd;
 }
 .table > thead > tr > th {
@@ -1632,7 +1632,7 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */
-  line-height: normal;
+/*  line-height: normal;*/
 }
 input[type="file"] {
   display: block;
@@ -1656,7 +1656,7 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 14px;
-  line-height: 1.428571429;
+/*  line-height: 1.428571429;*/
   color: #555;
 }
 .form-control {
@@ -1665,7 +1665,7 @@ output {
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.428571429;
+/*  line-height: 1.428571429;*/
   color: #555;
   background-color: #fff;
   background-image: none;
@@ -1728,9 +1728,9 @@ input[type="date"] {
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
+/*.checkbox-inline input[type="checkbox"] {
   float: left;
-  margin-left: -20px;
+  margin-left: -20px;*/
 }
 .radio + .radio,
 .checkbox + .checkbox {
@@ -1768,12 +1768,12 @@ fieldset[disabled] .checkbox-inline {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
-  line-height: 1.5;
+/*  line-height: 1.5;*/
   border-radius: 3px;
 }
 select.input-sm {
   height: 30px;
-  line-height: 30px;
+/*  line-height: 30px;*/
 }
 textarea.input-sm,
 select[multiple].input-sm {
@@ -1783,7 +1783,7 @@ select[multiple].input-sm {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
+/*  line-height: 1.33;*/
   border-radius: 6px;
 }
 select.input-lg {
@@ -1807,7 +1807,7 @@ select[multiple].input-lg {
   display: block;
   width: 34px;
   height: 34px;
-  line-height: 34px;
+/*  line-height: 34px;*/
   text-align: center;
 }
 .has-success .help-block,
