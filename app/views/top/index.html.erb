@@ -64,11 +64,51 @@
 </section>
 
 
-   
+<div id="content">
+  <div id ="layer"></div>
+  <div id ="pop_loader" style = "display:none;"></div>
+  <div id ="pop"></div>
     <div class="container testimage">
-    </div>
+      
 
-<!--  ここから共通素材　-->
+  <% @books.each do |book| %>
+
+  
+  <img class="pop box effect" data-popid="<%= book.id %>" style="cursor: pointer;" src= "/docs/<%= book.image1 %>"/>
+ 
+  <% end %>
+
+
+      <%= image_tag("pic1.jpeg") %>
+      <%= image_tag("pic2.jpeg") %>
+      <%= image_tag("pic3.jpeg") %>
+      <%= image_tag("pic4.jpeg") %>
+      <%= image_tag("pic5.jpeg") %>
+      <%= image_tag("pic6.jpeg") %>
+      <%= image_tag("pic7.jpeg") %>
+      <%= image_tag("pic8.jpeg") %>
+      <%= image_tag("pic9.jpeg") %>
+      <%= image_tag("pic10.jpeg") %>
+      <%= image_tag("pic11.jpeg") %>
+      <%= image_tag("pic12.jpeg") %>
+      <%= image_tag("pic13.jpeg") %>
+      <%= image_tag("pic14.jpeg") %>
+      <%= image_tag("pic15.jpeg") %>
+      <%= image_tag("pic16.jpeg") %>
+      <%= image_tag("pic17.jpeg") %>
+      <%= image_tag("pic18.jpeg") %>
+      <%= image_tag("pic19.jpeg") %>
+      <%= image_tag("pic20.jpeg") %>
+
+
+
+
+
+    </div>
+</div>
+
+
+
  <%= yield %>
 
  <script>
@@ -90,3 +130,83 @@
     });
 
   </script>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+var layer = $("#layer");
+var pop = $("#pop");
+var close = $("#close");
+var pop_loader = $("#pop_loader");
+
+// for popup
+function init(){
+var box = $("#popup")
+box.css({
+marginLeft: Math.round(-(box.width() / 2)) + 'px',
+marginTop: Math.round(-(box.height() / 2)) + 'px'
+})
+}
+
+$(window).resize(function(e){
+var box = $("#popup")
+box.css({
+marginLeft: Math.round(-(box.width() / 2)) + 'px',
+marginTop: Math.round(-(box.height() / 2)) + 'px'
+})
+})
+
+function showPopup(id){
+
+
+pop_loader.show()
+pop.empty();
+layer.fadeIn('fast');
+$.ajax({
+type:'get',
+datatype: 'json',
+data: {"id":id},
+url: '/json',
+success: function(data){
+
+console.log("データを取得しました" + data.title);
+pop.append('<div id="popup"><div class="up_back"><a id="close" href="javascript:void(0);"return false>×</a></div><div class="up_center"><div class="amazon_img"><img src="/docs/'+data.image1+'" /></div><div class="detail_kakidashi">'+ data.title +'</div></div><div class="up_center_social"><div class ="social_link"><a href="'+data.amazon_link+'" title="" target="blank"><img src="/assets/amazon_button_off.png" alt="amazon" ></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/?status=' + encodeURIComponent('「'+htmlEscape(data.title)+'」- 美意識に革命を '+location.href) + '" title="" target="blank"><img src="/assets/twitter_button_off.png" alt="twitter"></a></div></div></div>');
+console.log(pop.val());
+pop_loader.hide()
+init();
+},
+error: function(){
+alert('エラーが発生しました。申し訳ありませんがもう一度やり直してください');
+}
+
+})
+
+}
+
+function htmlEscape(str){
+return str.replace(/<\/?[^>]+>/gi, "");
+}
+
+$(".pop").live('click',function(e){
+showPopup($(this).data('popid'))
+pop.fadeIn('fast');
+})
+
+layer.click(function(){
+pop.hide();
+layer.fadeOut('fast');
+})
+
+close.live('click',function(){
+pop.hide();
+layer.fadeOut('fast');
+})
+
+
+
+
+})
+
+</script>

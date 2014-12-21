@@ -7,6 +7,7 @@ Visualemotion::Application.routes.draw do
   resources :books
   resources :tops
   resources :abouts
+  resources :json
   # resources :abouts
 
 
@@ -19,8 +20,10 @@ Visualemotion::Application.routes.draw do
 
 
   get 'top/index' => 'top#index'
-
   get 'top' => 'top#index'
+
+
+  #get 'json' => 'json#show'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

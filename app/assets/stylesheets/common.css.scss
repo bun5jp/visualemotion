@@ -292,6 +292,55 @@ ul {
 .testimage {
 text-align: center;
   img{
-  margin: 10px
+  margin: 2px
   }
 }
+
+
+/* pop
+-------------------------------*/
+.pop{
+
+
+}
+
+/* popup ライトボックスの記述   
+-------------------------------*/
+
+#popup{
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 40%;
+    height: 60%;
+    max-height: 650px;
+    min-width: 520px;
+    min-height: 440px;
+    border-radius:3px;
+    background-color: #fff;
+    // filter: alpha(opacity=90);
+    //-moz-opacity:0.90;
+    //opacity:0.90;
+}
+
+  #layer{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+    display:none;
+    width:100%;
+    height:100%;
+    background:black;
+    opacity: 0.70 !important;
+    filter:alpha(opacity=70) !important;
+  }
+
+  .amazon_img{
+    img{
+      max-height:300px; 
+    }
+  }
+

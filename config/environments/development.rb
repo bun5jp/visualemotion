@@ -41,8 +41,9 @@ config.action_mailer.smtp_settings = {
   :enable_starttls_auto => true,
   :address => 'smtp.gmail.com',
   :port => '587',
-  :domain => 'smtp.gmail.com'
+  :domain => 'smtp.gmail.com',
   :authentication => 'plain',
   :user_name => 'visualemotion.contact@gmail.com',
   :password => 'visualemotioncontact'
+}
 end
