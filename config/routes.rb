@@ -1,6 +1,5 @@
 Visualemotion::Application.routes.draw do
 
-  get "law/law"
 
   # get "about/index"
   resources :contacts

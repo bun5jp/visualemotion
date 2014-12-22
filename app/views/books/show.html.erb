@@ -40,5 +40,10 @@
   <%= @book.del_flg %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
+<div class="actions">
+<%= link_to 'Edit', edit_book_path(@book) %>
+ </div>
+
+<div class="actions">
 <%= link_to 'Back', books_path %>
+ </div>

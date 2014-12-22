@@ -99,6 +99,30 @@ ul{
 
 
 
+/* menumap
+-------------------------------*/
+#backhome{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    line-height: 40px;
+    &:hover{
+        border-radius: 10px;
+        background-color: #f8ced0;
+        }
+  }
+}
+
+
+
+
 
 // Place all the styles related to the About controller here.
 // Place all the styles related to the about controller here.

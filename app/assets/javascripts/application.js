@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require js/lightbox
 //= require turbolinks
 //= require_tree .
 

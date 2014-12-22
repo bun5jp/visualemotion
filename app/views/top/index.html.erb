@@ -25,12 +25,12 @@
     <div class="fixedmenu">
       <div class="sidemenu">
        
-          <section class="navbar">
-            <div id="open-sb" class="menu-icon menu-button menu-right">
-              <i class="fa fa-bars">Menu</i>
-            </div>
-          </section>
-       
+        <section class="navbar">
+          <div id="open-sb" class="menu-icon menu-button menu-right">
+            <i class="fa fa-bars">Menu</i>
+          </div>
+        </section>
+        
       </div>
 
       <div class="category">
@@ -47,72 +47,77 @@
     <!--  メニューバー終了　-->
 
 
-       
-<section class="sidebar">
-  <li><a><i class="fa fa-times-circle-o"></i></a></li>
+    <!-- サイドバー-->
+    <section class="sidebar">
+      <li><a><i class="fa fa-times-circle-o"></i></a></li>
 
-  <nav>
-  <p>MENU</p>
-  <ul>
-    <li><%= link_to 'Home', 'top' %></li>
-    <li><%= link_to 'About', 'about' %></li>
-    <li><%= link_to 'Category+', '#' %></li>
-    <li><%= link_to 'Request', 'contact' %></li>
-    <li><%= link_to 'Blog', '#' %></li>
-  </ul>
-  </nav>  
-</section>
+      <nav>
+        <p>MENU</p>
+        <ul>
+          <li><%= link_to 'Home', 'top' %></li>
+          <li><%= link_to 'About', 'about' %></li>
+          <li><%= link_to 'Category+', '#' %></li>
+          <li><%= link_to 'Request', 'contact' %></li>
+          <li><%= link_to 'Blog', '#' %></li>
+        </ul>
+      </nav>  
+      <div id="facebook_like" class="social"></div>
+      <div id="twitter" class="social"></div>
+      <div id="hatena" class="social"></div>
+    </section>
 
-
-<div id="content">
-  <div id ="layer"></div>
-  <div id ="pop_loader" style = "display:none;"></div>
-  <div id ="pop"></div>
-    <div class="container testimage">
-      
-
-  <% @books.each do |book| %>
-
-  
-  <img class="pop box effect" data-popid="<%= book.id %>" style="cursor: pointer;" src= "/docs/<%= book.image1 %>"/>
- 
-  <% end %>
+    <!-- サイドバー-->
 
 
-      <%= image_tag("pic1.jpeg") %>
-      <%= image_tag("pic2.jpeg") %>
-      <%= image_tag("pic3.jpeg") %>
-      <%= image_tag("pic4.jpeg") %>
-      <%= image_tag("pic5.jpeg") %>
-      <%= image_tag("pic6.jpeg") %>
-      <%= image_tag("pic7.jpeg") %>
-      <%= image_tag("pic8.jpeg") %>
-      <%= image_tag("pic9.jpeg") %>
-      <%= image_tag("pic10.jpeg") %>
-      <%= image_tag("pic11.jpeg") %>
-      <%= image_tag("pic12.jpeg") %>
-      <%= image_tag("pic13.jpeg") %>
-      <%= image_tag("pic14.jpeg") %>
-      <%= image_tag("pic15.jpeg") %>
-      <%= image_tag("pic16.jpeg") %>
-      <%= image_tag("pic17.jpeg") %>
-      <%= image_tag("pic18.jpeg") %>
-      <%= image_tag("pic19.jpeg") %>
-      <%= image_tag("pic20.jpeg") %>
+    <div id="content">
+      <div id ="layer"></div>
+      <div id ="pop_loader" style = "display:none;"></div>
+      <div id ="pop"></div>
+      <div class="container testimage">
+        
+
+        <% @books.each do |book| %>
+
+        
+        <img class="pop box effect" data-popid="<%= book.id %>" style="cursor: pointer;" src= "/docs/<%= book.image1 %>"/>
+        
+        <% end %>
+
+
+        <%= image_tag("pic1.jpeg") %>
+        <%= image_tag("pic2.jpeg") %>
+        <%= image_tag("pic3.jpeg") %>
+        <%= image_tag("pic4.jpeg") %>
+        <%= image_tag("pic5.jpeg") %>
+        <%= image_tag("pic6.jpeg") %>
+        <%= image_tag("pic7.jpeg") %>
+        <%= image_tag("pic8.jpeg") %>
+        <%= image_tag("pic9.jpeg") %>
+        <%= image_tag("pic10.jpeg") %>
+        <%= image_tag("pic11.jpeg") %>
+        <%= image_tag("pic12.jpeg") %>
+        <%= image_tag("pic13.jpeg") %>
+        <%= image_tag("pic14.jpeg") %>
+        <%= image_tag("pic15.jpeg") %>
+        <%= image_tag("pic16.jpeg") %>
+        <%= image_tag("pic17.jpeg") %>
+        <%= image_tag("pic18.jpeg") %>
+        <%= image_tag("pic19.jpeg") %>
+        <%= image_tag("pic20.jpeg") %>
 
 
 
 
 
+      </div>
     </div>
-</div>
 
 
 
- <%= yield %>
+    <%= yield %>
 
- <script>
-  $( ".sidebar" ).simpleSidebar({
+    <script>
+    $( ".sidebar" ).simpleSidebar({
       settings: {
         opener: "#open-sb",
         wrapper: ".wrapper",
@@ -129,79 +134,79 @@
 
     });
 
-  </script>
+    </script>
 
 
 
 
-<script type="text/javascript">
-$(document).ready(function(){
-var layer = $("#layer");
-var pop = $("#pop");
-var close = $("#close");
-var pop_loader = $("#pop_loader");
+    <script type="text/javascript">
+    $(document).ready(function(){
+      var layer = $("#layer");
+      var pop = $("#pop");
+      var close = $("#close");
+      var pop_loader = $("#pop_loader");
 
 // for popup
 function init(){
-var box = $("#popup")
-box.css({
-marginLeft: Math.round(-(box.width() / 2)) + 'px',
-marginTop: Math.round(-(box.height() / 2)) + 'px'
-})
+  var box = $("#popup")
+  box.css({
+    marginLeft: Math.round(-(box.width() / 2)) + 'px',
+    marginTop: Math.round(-(box.height() / 2)) + 'px'
+  })
 }
 
 $(window).resize(function(e){
-var box = $("#popup")
-box.css({
-marginLeft: Math.round(-(box.width() / 2)) + 'px',
-marginTop: Math.round(-(box.height() / 2)) + 'px'
-})
+  var box = $("#popup")
+  box.css({
+    marginLeft: Math.round(-(box.width() / 2)) + 'px',
+    marginTop: Math.round(-(box.height() / 2)) + 'px'
+  })
 })
 
 function showPopup(id){
 
 
-pop_loader.show()
-pop.empty();
-layer.fadeIn('fast');
-$.ajax({
-type:'get',
-datatype: 'json',
-data: {"id":id},
-url: '/json',
-success: function(data){
+  pop_loader.show()
+  pop.empty();
+  layer.fadeIn('fast');
+  $.ajax({
+    type:'get',
+    datatype: 'json',
+    data: {"id":id},
+    url: '/json',
+    success: function(data){
 
-console.log("データを取得しました" + data.title);
-pop.append('<div id="popup"><div class="up_back"><a id="close" href="javascript:void(0);"return false>×</a></div><div class="up_center"><div class="amazon_img"><img src="/docs/'+data.image1+'" /></div><div class="detail_kakidashi">'+ data.title +'</div></div><div class="up_center_social"><div class ="social_link"><a href="'+data.amazon_link+'" title="" target="blank"><img src="/assets/amazon_button_off.png" alt="amazon" ></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/?status=' + encodeURIComponent('「'+htmlEscape(data.title)+'」- 美意識に革命を '+location.href) + '" title="" target="blank"><img src="/assets/twitter_button_off.png" alt="twitter"></a></div></div></div>');
-console.log(pop.val());
-pop_loader.hide()
-init();
-},
-error: function(){
-alert('エラーが発生しました。申し訳ありませんがもう一度やり直してください');
-}
+      console.log("データを取得しました" + data.title);
+      pop.append('<div id="popup"><div class="up_back"><a id="close" href="javascript:void(0);"return false>×</a></div><div class="up_center"><div class="amazon_img"><img src="/docs/'+data.image1+'" /></div><div class="detail_kakidashi">'+ data.title +'</div></div><div class="up_center_social"><div class ="social_link"><a href="'+data.amazon_link+'" title="" target="blank"><img src="/assets/amazon_button_off.png" alt="amazon" ></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/?status=' + encodeURIComponent('「'+htmlEscape(data.title)+'」- 美意識に革命を '+location.href) + '" title="" target="blank"><img src="/assets/twitter_button_off.png" alt="twitter"></a></div></div></div>');
+      console.log(pop.val());
+      pop_loader.hide()
+      init();
+    },
+    error: function(){
+      alert('エラーが発生しました。申し訳ありませんがもう一度やり直してください');
+    }
 
-})
+  })
 
 }
 
 function htmlEscape(str){
-return str.replace(/<\/?[^>]+>/gi, "");
+  return str.replace(/<\/?[^>]+>/gi, "");
 }
 
 $(".pop").live('click',function(e){
-showPopup($(this).data('popid'))
-pop.fadeIn('fast');
+  showPopup($(this).data('popid'))
+  pop.fadeIn('fast');
 })
 
 layer.click(function(){
-pop.hide();
-layer.fadeOut('fast');
+  pop.hide();
+  layer.fadeOut('fast');
 })
 
 close.live('click',function(){
-pop.hide();
-layer.fadeOut('fast');
+  pop.hide();
+  layer.fadeOut('fast');
 })
 
 
@@ -210,3 +215,24 @@ layer.fadeOut('fast');
 })
 
 </script>
+
+
+<!-- ソーシャルボタン用 -->
+<script type="text/javascript">
+$(function() {
+  $('#hatena').socialbutton('hatena', {
+    button: 'vertical',
+    title: '本の書きだし- 出だしよければ、全て良し。',
+    url: 'http://kakidashi.com'
+  });
+  $('#twitter').socialbutton('twitter', {
+    button: 'vertical',
+    text: '【本の書きだし】- 出だしよければ、全て良し。',
+    url: 'http://kakidashi.com'
+  });
+  $('#facebook_like').socialbutton('facebook_like', {
+    button: 'box_count',
+  });
+});
+</script>
+

@@ -1,6 +1,14 @@
-<h1>Listing books</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
 
-<table>
+<h1>Visual Emotion Book List</h1>
+
+<table class="table-striped">
   <thead>
     <tr>
       <th>Title</th>
@@ -10,7 +18,7 @@
       <th>Amazon link</th>
       <th>Category</th>
       <th>Note</th>
-      <th>Del flg</th>
+      <th>Delflg</th>
       <th></th>
       <th></th>
       <th></th>
@@ -38,4 +46,12 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+
+<div class="actions">
+<%= link_to 'New Book', new_book_path, {:class => "makenew"} %>
+</div>
+
+  
+</body>
+</html>
+
