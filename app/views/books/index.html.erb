@@ -8,8 +8,7 @@
 
 <h1>Visual Emotion Book List</h1>
 
-<!-- tag_lists -->
-<p>Tags:  <%= article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
+<!-- tag_list -->
 
 
 </div>
@@ -37,13 +36,16 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.image1 %></td>
+        <td><%= image_tag "/docs/#{book.image1}", width: "50px" %></td>   <!-- 式展開 -->    
         <td><%= book.image2 %></td>
         <td><%= book.image3 %></td>
         <td><%= book.amazon_link %></td>
         <td><%= book.category_id %></td>
         <td><%= book.note %></td>
         <td><%= book.del_flg %></td>
-        <td><%= book.tag_list %></td>
+        <td><%= raw book.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></td>
+        <!-- <p>Tags:  <%= book.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p> -->
+
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>

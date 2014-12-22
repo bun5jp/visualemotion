@@ -4,7 +4,11 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all
+    if params[:tag]
+      @books = Book.tagged_with(params[:tag])
+    else
+      @books = Book.all
+    end
   end
 
   # GET /books/1
@@ -101,11 +105,7 @@ def upload
   end
 
 
-#
+#  tag==================
 
-if params[:tag]
-    @books = books.tagged_with(params[:tag])
-  else
-    @books = book.all
-  end
+
 end
