@@ -21,6 +21,9 @@ Visualemotion::Application.routes.draw do
   get 'top/index' => 'top#index'
   get 'top' => 'top#index'
 
+  get 'tags/:tag', to: 'books#index', as: :tag
+  root to: 'books#index'
+
 
   #get 'json' => 'json#show'
 

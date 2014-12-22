@@ -82,12 +82,12 @@ class BooksController < ApplicationController
     def book_params
       params.require(:book).permit(:title, :image1, :image2, :image3, :amazon_link, :category_id, :note, :del_flg, :tag_list)
     end
-end
 
 
 
 
-#　アップロード用の機能　
+
+#アップロード用の機能
 
 def upload
     file = params[:img]
@@ -99,3 +99,13 @@ def upload
  
     render nothing: true, status: 200
   end
+
+
+#
+
+if params[:tag]
+    @books = books.tagged_with(params[:tag])
+  else
+    @books = book.all
+  end
+end
