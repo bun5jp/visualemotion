@@ -18,9 +18,11 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
 
 .m1-blackbox{
   background-color: rgba(0,0,0,0.7);
+  position: relative;
+  top: 150px;
   background-position: center;
-  margin-right: 300px;
-  margin-left: 300px;
+  //margin-right: 300px;
+  //margin-left: 300px;
   padding: 50px 50px;
   background-size: 200px 150px;
   // padding: 20px 200px;
