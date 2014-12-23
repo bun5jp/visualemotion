@@ -10,7 +10,6 @@ Visualemotion::Application.routes.draw do
   # resources :abouts
 
 
-  get 'about' => 'layouts#about'
   get 'law' => 'law'
 
   get 'contact' => 'contacts#index'              # 入力画面
@@ -22,7 +21,8 @@ Visualemotion::Application.routes.draw do
   get 'top' => 'top#index'
 
   get 'tags/:tag', to: 'books#index', as: :tag
-  root to: 'books#index'
+  root 'top#index'
+  match '/about' , to: 'layouts#about' , via: 'get'
 
 
   #get 'json' => 'json#show'
