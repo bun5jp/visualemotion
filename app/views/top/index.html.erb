@@ -68,22 +68,22 @@
 
     <!-- サイドバー-->
 
-
+<div id="container" class="centered">
     <div id="content">
       <div id ="layer"></div>
       <div id ="pop_loader" style = "display:none;"></div>
       <div id ="pop"></div>
-      <div class="container testimage">
+      <div class="testimage">
         
 
         <% @books.each do |book| %>
-
-        
-        <img class="pop box effect" data-popid="<%= book.id %>" style="cursor: pointer;" src= "/docs/<%= book.image1 %>"/>
+        <% num = Random.rand(1 .. 2); %>
+        <img class="pop box effect w<%= num %>" data-popid="<%= book.id %>" style="cursor: pointer; " src= "/docs/<%= book.image1 %>"/>
         
         <% end %>
+</div>
 
-
+<!-- 
         <%= image_tag("pic1.jpeg") %>
         <%= image_tag("pic2.jpeg") %>
         <%= image_tag("pic3.jpeg") %>
@@ -106,10 +106,13 @@
         <%= image_tag("pic20.jpeg") %>
 
 
-
+ -->
 
 
       </div>
+    </div>
+    <div class="pagenation">
+      <a href="?p=<%= @nextpage %>" rel="next">NEXT PAGE</a>
     </div>
 
 
@@ -139,12 +142,12 @@
 
 
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-      var layer = $("#layer");
-      var pop = $("#pop");
-      var close = $("#close");
-      var pop_loader = $("#pop_loader");
+<script type="text/javascript">
+  $(document).ready(function(){
+    var layer = $("#layer");
+    var pop = $("#pop");
+    var close = $("#close");
+    var pop_loader = $("#pop_loader");
 
 // for popup
 function init(){
@@ -235,4 +238,8 @@ $(function() {
   });
 });
 </script>
+
+
+
+
 

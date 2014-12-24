@@ -12,13 +12,15 @@
     
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
      <script src="assets/jquery.simplesidebar.min.js"></script>
      <script src="assets/jquery.infinitescroll.min.js"></script>
-     <script src="assets/jquery.masonry.min.js"></script>
      <script src="assets/jquery.socialbutton-1.9.0.min.js"></script>
-     <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'><script src="masonry.pkgd.min.js"></script>
+     <!--<script src="assets/jquery.pageswitch.js"></script>-->
+
+
+     <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 
 
@@ -42,6 +44,57 @@
     
 
  <%= yield %>
-   
+  
+    <script src="assets/jquery.masonry.min.js"></script>
+        <script src="assets/imagesloaded.pkgd.min.js"></script>
+    <script>
+  // $(function(){
+  //   $('#container').masonry({
+  //     itemSelector: '.box',
+  //     //columnWidth: 340, //一列の幅サイズを指定
+  //     isAnimated: true, //スムースアニメーション設定
+  //     isFitWidth: true, //親要素の幅サイズがピッタリ
+  //   });
+  // });
+
+// var container = $('#container');
+
+// container.imagesLoaded(function () {
+//   container.masonry({
+//     //columnWidth: 200,
+//     itemSelector: '.box',
+//     isAnimated: true
+//   });
+// });
+//===================================================
+  $(function(){
+    var $container = $('.testimage').css({ opacity: 0 });
+    $container.imagesLoaded(function(){
+      $container.animate({ opacity: 1 });
+      $container.masonry({ itemSelector: '.box' });
+    });
+
+    $container.infinitescroll({
+      navSelector  : '.pagenation',
+      nextSelector : '.pagenation a[rel=next]',
+      itemSelector : '#container .testimage',
+      loading: {
+        msgText: '',
+        finishedMsg: '',
+      }
+    }, function( newElements ) {
+      var $newElems = $( newElements ).css({ opacity: 0 });
+      $newElems.imagesLoaded(function(){
+        $newElems.animate({ opacity: 1 });
+        $container.masonry( 'appended', $newElems, true );
+      });
+    });
+  });
+
+
+
+
+</script>
+
   </body>
 </html>
