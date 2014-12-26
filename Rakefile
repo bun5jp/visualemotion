@@ -4,6 +4,6 @@
 require File.expand_path('../config/application', __FILE__)
 
 
-# system "git push heroku #{master}"
+system "git push heroku #{master}"
 
 Rails.application.load_tasks
