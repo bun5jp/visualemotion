@@ -2,6 +2,9 @@ class Book < ActiveRecord::Base
 belongs_to :category
 # acts_as_taggable
 
+  validates :category_id, length: { maximum: 4 }
+
+
  def set_image(file1, file2, file3)
     if !file1.nil?
       file1_name = file1.original_filename
