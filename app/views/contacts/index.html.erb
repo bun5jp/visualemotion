@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Visualemotion</title>
+   <title>VISUALEMOTION</title>
    <%= stylesheet_link_tag    'contacts', media: 'all', 'data-turbolinks-track' => true %>
    <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => true %>
 <!--    <%= csrf_meta_tags %>
 
 <!--    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 <!--    // <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?4XU2G~E0OwQ%3D" charset="utf-8"></script> -->
-</head>
+
 
 
 <%= form_for @contact, :url => contact_confirm_path do |f| %>
 
+<!-- メニューバー　-->
+<p id="backhome"><%= link_to 'Home', 'top' %></li>
+  <!-- メニューバー　-->
+<br>
   <div class="page-header">
     <h1>CONTACT</h1>
   </div>
- 
+</head>
+
   <% if @contact.errors.any? %>
     <div class="alert alert-danger" role="alert">
-      <p>入力内容にエラーがあります</p>
       <ul>
         <% @contact.errors.each do |attr, msg| %>
 　　　　　<li><%= msg %></li>
         <% end %>
       </ul>
     </div>
-
-<br>
-<br>
-<br>
-
   <% end %>
- 
-<br>
-<br>
-
 
 <body>
-  <br>
+  <br><br>
   <p>NAME</p>
   <%= f.hidden_field :name %>
   <%= f.text_field :name, :class=>"text" %>
@@ -51,7 +46,7 @@
   <br>
   <p>MESSAGE</p>
   <%= f.hidden_field :message %>
-  <%= f.text_area :message, :class=>"text", :size=>"40x10" %>
+  <%= f.text_area :message, :class=>"text", :size=>"40x5" %>
   <br>
   <br>
 </body>
@@ -59,9 +54,9 @@
 <html>
   
   <br>
-  <br>
-
-  <div id="box"><%= f.submit 'CONFIRM' %></div>
+  <div id="box"><%= f.submit 'CONFIRM', :class => "button" %></div>
+<!--   <%= f.submit :class => "button" %> -->
+<!--   <input id="submit_button" type="submit" name="submit" value="投稿する"> -->
 
 <!--   <input type="submit" value="CONFIRM">
 <!--   <%= f.submit 'CONFIRM', class: 'btn btn-primary' %> -->
