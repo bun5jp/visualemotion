@@ -1,6 +1,6 @@
 class Book < ActiveRecord::Base
 belongs_to :category
-acts_as_taggable
+# acts_as_taggable
 
  def set_image(file1, file2, file3)
     if !file1.nil?

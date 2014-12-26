@@ -1,3 +1,79 @@
-// Place all the styles related to the law controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+@charset "UTF-8";
+
+
+/* top header
+-------------------------------*/
+
+.backhome{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    line-height: 40px;
+    font-family: Raleway;
+    font-weight: bold;
+
+    &:hover{
+        border-radius: 10px;
+        background-color: #f8ced0;
+        }
+  }
+}
+
+/* LAW
+-------------------------------*/
+
+.cover{
+  background-image: image-url('law.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  height: 800px;
+  width: 100%;
+  margin: 0;
+}
+
+.blackbox{
+  background-color: rgba(0,0,0,0.7);
+  position: relative;
+  top: 150px;
+  background-position: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 50px 50px;
+  background-size: 200px 150px;
+
+}
+
+body{
+  color: white;
+  font-family: serif;
+}
+
+.header1{
+  font-size: 3rem;
+  text-align: center;	
+}
+
+// .sub-header{
+//   font-size: 1.5rem;
+//   text-align: left;	
+// }
+
+.body1{
+  font-size: 1rem;
+  text-align: left;	
+}
+
+// span{
+//   font-size: 1.5rem;
+// }
+
+
