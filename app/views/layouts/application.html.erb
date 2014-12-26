@@ -26,23 +26,6 @@
 
   </head>
   
-<!--  デザイン変更
-        <header>
-          <div class="header">
-            <div class="header-left">
-              <i class="fa fa-bars">MENU</i>
-            </div>
-              <div class="header-middle">VISUAL</br>EMOTION
-              </div>
-              <div class="header-right">
-              </div>
-          </div>
-         </header>
-        <h1>美意識に、革命を。</h1>
-        <h2>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある。</h2>
-      -->
-    
-
  <%= yield %>
   
     <script src="assets/jquery.masonry.min.js"></script>
@@ -86,10 +69,18 @@
       var $newElems = $( newElements ).css({ opacity: 0 });
       $newElems.imagesLoaded(function(){
         $newElems.animate({ opacity: 1 });
-        $container.masonry( 'appended', $newElems, true );
+        $container.masonry( 'appended', $newElems, true  );
       });
     });
   });
+$(function(){
+   
+  $('#container').masonry({ //親要素のクラスを指定
+    itemSelector: '.box', //整理される要素のclassを指定
+    isAnimated: true, //スムースアニメーション設定
+  });
+   
+});
 
 
 

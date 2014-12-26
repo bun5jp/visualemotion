@@ -5,8 +5,8 @@ class TopController < ApplicationController
   	#if (!params[:p]){page = 1} else {page = params :p}
   	@page = !params[:p] ? 1 : params[:p];
     @nextpage = @page.to_i+1;
-  	@offset = (@page.to_i - 1)*5;
-  	@books = Book.order("RANDOM()").find(:all,:offset => @offset,:limit => 5)
+  	@offset = (@page.to_i - 1)*20;
+  	@books = Book.order("RANDOM()").find(:all,:offset => @offset,:limit => 20)
 
   end
 end
