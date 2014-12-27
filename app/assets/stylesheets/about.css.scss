@@ -18,6 +18,8 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
 
 .m1-blackbox{
   background-color: rgba(0,0,0,0.7);
+  position: relative;
+  top: 150px;
   background-position: center;
   margin-right: 300px;
   margin-left: 300px;
@@ -61,6 +63,8 @@ span{
 .m2-blackbox{
   background-color: rgba(0,0,0,0.7);
   background-position: center;
+  position: relative;
+  top: 80px;
   margin-right: 300px;
   margin-left: 300px;
   padding: 50px 50px;
@@ -78,9 +82,12 @@ span{
   line-height: normal;
 }
 
-ul{
+ul li{
 	list-style-type: none;
   float: none;
+  width: 300px;
+  line-height: 1.5rem;
+
 }
 
 /* message1 and 2 
@@ -119,6 +126,10 @@ ul{
         }
   }
 }
+ul li{
+  width: 300px;
+}
+
 
 
 
