@@ -1,6 +1,6 @@
 
-  <div class="firstview">
-    <!--<%= video_tag("/asset/top-v.mp4", :autoplay => true,:loop => true,) %>-->
+<div class="firstview" id="1">
+  <!--<%= video_tag("/asset/top-v.mp4", :autoplay => true,:loop => true,) %>-->
  <!--  
   <div class="viewlogo"></div>
  デザイン変更
@@ -18,17 +18,17 @@
               </div>
           </div>
          </header>
--->
-        <h1>美意識に、革命を</h1>
-        <h2>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある</h2>
-</div>
-    <!--固定メニューバー-->
-    <div class="fixedmenu">
+       -->
+       <h1>美意識に、革命を</h1>
+       <h2>たっと一目で、あなたの価値観に衝撃を与える写真集が、ここにある</h2>
+     </div>
+     <!--固定メニューバー-->
+     <div class="fixedmenu">
       <div class="sidemenu">
-       
+
         <section class="navbar">
           <div id="open-sb" class="menu-icon menu-button menu-right">
-            <i class="fa fa-bars">Menu</i>
+            <i class="fa fa-bars"></i><nav>MENU</nav>
           </div>
         </section>
         
@@ -37,7 +37,7 @@
       <div class="category">
         <%= link_to 'ABOUT', 'about' %>
       </div>
-      <div class ="go-home">↑</div>
+      <a href="#1" class ="go-home">↑</a>
       <ul>
         <li><P>ART</P></li>
         <li><P>HUMAN</P></li>
@@ -45,7 +45,7 @@
         <li><P>OTHER</P></li>
       </ul>
     </div>
-    <!--  メニューバー終了　-->
+    <!--  メニューバー終了-->
 
 
     <!-- サイドバー-->
@@ -54,35 +54,44 @@
 
       <nav>
         <p>MENU</p>
-        <ul>
+        <ul class="accordion">
           <li><%= link_to 'Home', 'top' %></li>
           <li><%= link_to 'About', 'about' %></li>
-          <li><%= link_to 'Category+', '#' %></li>
+          <li id="ac"><section>Category+</section></li>
+          <ul>
+            <li><a href=" #">リスト 1-1</a></li>
+            <li><a href=" #">リスト 1-2</a></li>
+            <li><a href=" #">リスト 1-3</a></li>
+          </ul>
           <li><%= link_to 'Request', 'contact' %></li>
           <li><%= link_to 'Blog', '#' %></li>
         </ul>
-      </nav>  
+      </nav>
+    <div id="socialize">
+      <p>SOCIAL BUTTON</p>
       <div id="facebook_like" class="social"></div>
       <div id="twitter" class="social"></div>
       <div id="hatena" class="social"></div>
+    </div>
     </section>
 
     <!-- サイドバー-->
 
-<div id="container" class="centered">
-    <div id="content">
-      <div id ="layer"></div>
-      <div id ="pop_loader" style = "display:none;"></div>
-      <div id ="pop"></div>
-      <div class="testimage">
-        
 
-        <% @books.each do |book| %>
-        <% num = Random.rand(1 .. 2); %>
-        <img class="pop box effect w<%= num %>" data-popid="<%= book.id %>" style="cursor: pointer; " src= "/docs/<%= book.image1 %>"/>
-        
-        <% end %>
-</div>
+    <div id="container" class="centered">
+      <div id="content">
+        <div id ="layer"></div>
+        <div id ="pop_loader" style = "display:none;"></div>
+        <div id ="pop"></div>
+        <div class="testimage">
+
+
+          <% @books.each do |book| %>
+          <% num = Random.rand(1 .. 2); %>
+          <img class="pop box effect w<%= num %>" data-popid="<%= book.id %>" style="cursor: pointer; " src= "/docs/<%= book.image1 %>"/>
+
+          <% end %>
+        </div>
 
 <!-- 
         <%= image_tag("pic1.jpeg") %>
@@ -107,14 +116,14 @@
         <%= image_tag("pic20.jpeg") %>
 
 
- -->
+      -->
 
 
-      </div>
     </div>
-    <div class="pagenation">
-      <a href="?p=<%= @nextpage %>" rel="next"></a>
-    </div>
+  </div>
+  <div class="pagenation">
+    <a href="?p=<%= @nextpage %>" rel="next"></a>
+  </div>
 
 
 
@@ -143,12 +152,12 @@
 
 
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    var layer = $("#layer");
-    var pop = $("#pop");
-    var close = $("#close");
-    var pop_loader = $("#pop_loader");
+    <script type="text/javascript">
+    $(document).ready(function(){
+      var layer = $("#layer");
+      var pop = $("#pop");
+      var close = $("#close");
+      var pop_loader = $("#pop_loader");
 
 // for popup
 function init(){
@@ -181,11 +190,13 @@ function showPopup(id){
     success: function(data){
 
       console.log("データを取得しました" + data.title);
-      pop.append('<div id="popup"><div class="up_back"><a id="close" href="javascript:void(0);"return false>×</a></div><div class="up_center"><div class="amazon_img"><img src="/docs/'+data.image1+'" /></div><div class="detail_kakidashi">'+ data.title +'</div></div><div class="up_center_social"><div class ="social_link"><a href="'+data.amazon_link+'" title="" target="blank"><img src="/assets/amazon_button_off.png" alt="amazon" ></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/?status=' + encodeURIComponent('「'+htmlEscape(data.title)+'」- 美意識に革命を '+location.href) + '" title="" target="blank"><img src="/assets/twitter_button_off.png" alt="twitter"></a></div></div></div>');
+      pop.append('<div id="popup"><div class="up_back"><a id="close" href="javascript:void(0);"return false>×</a></div><div class="up_center"><div class="amazon_img"><a>'+ data.amazon_link +'<img src="/docs/'+data.image1+'" /></a></div><div class="title">'+ data.title +'</div></div><div class="up_center_social"><div class ="social_link"><a>'+ data.amazon_link +'<%= image_tag 'am_link.png'  %></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/?status=' + encodeURIComponent('「'+htmlEscape(data.title)+'」- 美意識に革命を '+location.href) + '" title="" target="blank"><%= image_tag 'tw_link.png' %></a></div><div class="note">'+ data.note +'</div></div></div>');
       console.log(pop.val());
       pop_loader.hide()
       init();
     },
+
+
     error: function(){
       alert('エラーが発生しました。申し訳ありませんがもう一度やり直してください');
     }
@@ -238,6 +249,18 @@ $(function() {
     button: 'box_count',
   });
 });
+</script>
+
+<script>
+//アコーディオン  
+$(function(){
+
+  $(".accordion #ac").click(function(){
+    $(this).next("ul").slideToggle();
+    $(this).children("section").toggleClass("open");
+  }); 
+});
+
 </script>
 
 <!-- Start of Amazon Publisher Studio Loader -->    
