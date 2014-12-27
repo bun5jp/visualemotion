@@ -1,0 +1,434 @@
+@charset "UTF-8";/*
+
+
+
+*/
+
+
+
+
+@import url(bootstrap.min.css);
+/* Global Layout
+-------------------------------*/
+/* line 7, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif, "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/* line 13, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+a:link {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* line 17, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+h1 {
+  font-size: 7rem;
+  color: white;
+  font-family: serif;
+  text-align: center;
+  padding-left: 100px;
+  margin: 0;
+  margin-top: 200px;
+}
+
+/* line 26, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+h2 {
+  font-size: 2rem;
+  color: white;
+  font-family: serif;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-top: 66px;
+}
+
+/* line 35, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+p {
+  height: 50px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-top: 0px;
+}
+
+/* line 43, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+ul {
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  padding: 0px;
+}
+
+/* line 50, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+li {
+  list-style: none;
+  float: left;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  width: 75px;
+  line-height: 50px;
+}
+/* line 58, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+li p {
+  font-size: 20px;
+  display: block;
+  transition-duration: 1s;
+}
+/* line 62, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+li p:hover {
+  background-color: #f8ced0;
+}
+
+/* line 68, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.container {
+  max-width: 1336px;
+}
+
+/* Navigation
+-------------------------------*/
+/* line 73, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+/* line 80, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.header-left {
+  flex-grow: 1;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 86, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.header-middle {
+  flex-grow: 6;
+  line-height: 25px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+/* line 93, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.header-right {
+  flex-grow: 1;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* First View
+-------------------------------*/
+/* line 102, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.firstview {
+  background-image: url(/assets/bg_home01.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+}
+
+/* line 109, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.viewlogo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+/* line 113, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.viewlogo img {
+  height: 50%;
+  width: 50%;
+}
+
+/* Side Navigation
+-------------------------------*/
+/* line 122, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidemenu {
+  width: 125px;
+  float: left;
+  cursor: pointer;
+  transition-duration: 1s;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 130, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidemenu:hover {
+  border-radius: 10px;
+  background-color: #f8ced0;
+}
+/* line 134, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidemenu div {
+  font-size: 20px;
+  display: block;
+  float: left;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  width: 100px;
+  line-height: 50px;
+}
+
+/* line 145, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.fa {
+  color: black;
+  padding-left: 20px;
+}
+
+/* Go Home Navigation
+-------------------------------*/
+/* line 154, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.go-home {
+  width: 50px;
+  float: left;
+  line-height: 50px;
+  color: black;
+  text-align: center;
+  display: block;
+  transition-duration: 1s;
+  font-size: 1rem;
+}
+/* line 163, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.go-home:hover {
+  border-radius: 10px;
+  background-color: #f8ced0;
+}
+
+/* Category
+-------------------------------*/
+/* line 171, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.fixedmenu {
+  width: 300px;
+  height: 100px;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+  z-index: 100;
+}
+/* line 179, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.fixedmenu .category {
+  width: 125px;
+  float: left;
+  display: block;
+  transition-duration: 1s;
+}
+/* line 184, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.fixedmenu .category:hover {
+  border-radius: 10px;
+  background-color: #f8ced0;
+}
+/* line 189, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.fixedmenu .category a {
+  font-size: 18px;
+  display: block;
+  padding: 0px;
+  text-align: center;
+  color: black;
+  line-height: 50px;
+  font-style: bold;
+  text-decoration: none;
+}
+
+/* line 204, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+ul {
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  padding: 0px;
+}
+/* line 210, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+ul li {
+  list-style: none;
+  float: left;
+  padding: 0px;
+  text-align: center;
+  width: 75px;
+  line-height: 50px;
+}
+/* line 217, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+ul li p {
+  cursor: pointer;
+  font-size: 15px;
+  display: block;
+  transition-duration: 1s;
+  color: black;
+}
+/* line 223, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+ul li p:hover {
+  border-radius: 10px;
+  background-color: #f8ced0;
+}
+
+/* sidebar
+-------------------------------*/
+/* line 233, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar {
+  background-color: #f8ced0;
+}
+/* line 235, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar li > a > .fa {
+  display: block;
+  cursor: pointer;
+  font-size: 2rem;
+  color: gray;
+  margin: 10px 0px 10px 230px;
+  transition-duration: 0.5s;
+}
+/* line 242, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar li > a > .fa:hover {
+  color: white;
+}
+/* line 247, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar nav {
+  clear: both;
+  width: 310px;
+  text-align: left;
+}
+/* line 251, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar nav p {
+  font-size: 2rem;
+  color: red;
+  text-align: left;
+  letter-spacing: 3px;
+  padding-left: 28px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+/* line 260, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar nav ul {
+  margin: 0;
+}
+/* line 262, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar nav ul li {
+  width: 310px;
+  height: 49px;
+  border-bottom: 1px solid white;
+  text-align: left;
+  transition-duration: 0.5s;
+}
+/* line 269, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar nav ul li:hover {
+  background-color: white;
+}
+/* line 274, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar nav ul li a {
+  font-size: 26px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  line-height: 50px;
+  display: block;
+  padding-left: 30px;
+  transition-duration: 0.6s;
+}
+/* line 283, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.sidebar nav ul li a:hover {
+  color: red;
+}
+
+/* line 292, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+#container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* Books 
+-------------------------------*/
+/* line 299, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.testimage {
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 303, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.testimage img {
+  border-radius: 10px;
+  max-height: none;
+}
+/* line 312, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.testimage img:hover {
+  background-color: #0a0a0a;
+}
+
+/* line 319, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.w1 {
+  width: 480px;
+}
+
+/* line 322, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.w2 {
+  width: 240px;
+}
+
+/* line 325, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.w3 {
+  width: 160px;
+}
+
+/* pop
+-------------------------------*/
+/* popup ライトボックスの記述   
+-------------------------------*/
+/* line 339, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+#popup {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 40%;
+  height: 60%;
+  max-height: 650px;
+  min-width: 520px;
+  min-height: 440px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+/* line 357, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+#layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.70 !important;
+  filter: alpha(opacity=70) !important;
+}
+
+/* line 371, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+.amazon_img img {
+  margin-left: 50px;
+  max-height: 300px;
+}
+
+/* line 379, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+#close {
+  color: #aaa;
+  position: relative;
+  float: right;
+  font-size: 32px;
+  z-index: 1200;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 100%;
+  border-radius: 3px;
+  text-decoration: none;
+  transition-duration: 0.6s;
+}
+
+/* line 394, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
+#close:hover {
+  color: black;
+  /*opacity: 0.90;*/
+  /*filter:alpha(opacity=90);*/
+}
