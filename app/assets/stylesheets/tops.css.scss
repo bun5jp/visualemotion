@@ -110,10 +110,11 @@ h2{
   text-shadow: 1px 1px 3px #000;  
 }
 }
+
 video{
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: -1;
 }
 
 /* Side Navigation
@@ -325,6 +326,7 @@ ul {
   width: 97%;
   text-align: center;
   margin: 0 auto;
+  background-color: white;
 
 
   img{
