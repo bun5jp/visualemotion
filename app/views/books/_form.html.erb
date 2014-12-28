@@ -19,14 +19,14 @@
     <%= f.label :image1 %><br>
     <%= f.file_field :image1 %>
   </div>
-  <div class="field">
+ <!--  <div class="field">
     <%= f.label :image2 %><br>
     <%= f.file_field :image2 %>
   </div>
   <div class="field">
     <%= f.label :image3 %><br>
     <%= f.file_field :image3 %>
-  </div>
+  </div> -->
   <div class="field">
     <%= f.label :amazon_link %><br>
     <%= f.text_field :amazon_link %>
@@ -35,15 +35,28 @@
     <%= f.label :category_id %><br>
     <%= f.number_field :category_id %>
   </div>
+  <div class="field">
+    <%= f.label :subcategory_id %><br>
+    <%= f.number_field :subcategory_id %>
+  </div>
   <div class="field text">
     <%= f.label :note %><br>
     <%= f.text_area :note %>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :del_flg %><br>
     <%= f.number_field :del_flg %>
-  </div>
+  </div> -->
+  <br>
+  <br>
+
     <div class="actions">
     <%= f.submit %>
   </div>
+    <br>  <br>  <br>  <br>  <br>  <br>
+  
 <% end %>
+
+
+
+

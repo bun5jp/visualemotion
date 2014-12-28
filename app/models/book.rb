@@ -1,5 +1,7 @@
 class Book < ActiveRecord::Base
 belongs_to :category
+belongs_to :subcategory
+
 # acts_as_taggable
 
   validates :category_id, length: { maximum: 4 }

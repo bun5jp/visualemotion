@@ -1,0 +1,62 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+category1:
+  name: cat
+  id: 1
+
+category2:
+  name: dog
+  id: 2
+
+category3:
+  name: girls
+  id: 3
+
+category4:
+  name: idol 
+  id: 4
+
+category5:
+  name: womanactor
+  id: 5
+
+category6:
+  name: manactor
+  id: 6
+
+category7:
+  name: subculture
+  id: 7
+
+category8:
+  name: design
+  id: 8
+
+category9:
+  name: fashion
+  id: 9
+
+category10:
+  name: country
+  id: 10
+
+category11:
+  name: culture
+  id: 11
+
+category12:
+  name: architect
+  id: 12
+
+category13:
+  name: food
+  id: 13
+
+category14:
+  name: religion
+  id: 14
+
+category15:
+  name: Daysbook
+  id: 15
+
+
