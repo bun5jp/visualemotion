@@ -35,18 +35,6 @@ Visualemotion::Application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.raise_delivery_errors = true
-  # config.action_mailer.smtp_settings = {
-  #   :enable_starttls_auto => true,
-  #   :address => 'smtp.gmail.com',
-  #   :port => '587',
-  #   :domain => 'smtp.gmail.com',
-  #   :authentication => 'plain',
-  #   :user_name => 'mayak.sub@gmail.com',
-  #   :password => 'lsosvses'
-  # }
-
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
@@ -55,9 +43,8 @@ Visualemotion::Application.configure do
    :port => '587',
    :domain => 'smtp.gmail.com',
    :authentication => 'plain',
-   :user_name => 'mayak.sub@gmail.com',
-   :password => 'lsosvses'
+   :user_name => 'v.emotion.co@gmail.com',
+   :password => 'vemotionco'
   }
-
   
 end

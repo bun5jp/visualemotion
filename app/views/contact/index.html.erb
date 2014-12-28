@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>VISUALEMOTION</title>
-   <%= stylesheet_link_tag    'contact', media: 'all', 'data-turbolinks-track' => true %>
+   <title>VISUALEMOTION/contact</title>
+   <%= stylesheet_link_tag    'contact', 'data-turbolinks-track' => true %>
    <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => true %>
 <!--    <%= csrf_meta_tags %>
 
@@ -14,7 +14,8 @@
 <%= form_for @contact, :url => contact_confirm_path do |f| %>
 
 <!-- メニューバー　-->
-<p id="backhome"><%= link_to 'Home', 'top' %></li>
+<p id="backhome"><%= link_to 'Home', 'top' %></p>
+<p id="terms_of_conditions"><%= link_to 'Terms of Conditions', 'law' %></p>
   <!-- メニューバー　-->
 <br>
   <div class="page-header">
@@ -33,7 +34,8 @@
   <% end %>
 
 <body>
-  <br><br>
+  <br>
+  <br>
   <p>NAME</p>
   <%= f.hidden_field :name %>
   <%= f.text_field :name, :class=>"text" %>
@@ -49,21 +51,14 @@
   <%= f.text_area :message, :class=>"text", :size=>"40x5" %>
   <br>
   <br>
-</body>
 
-<html>
   
   <br>
   <div id="box"><%= f.submit 'CONFIRM', :class => "button" %></div>
-<!--   <%= f.submit :class => "button" %> -->
-<!--   <input id="submit_button" type="submit" name="submit" value="投稿する"> -->
+  <% end %>
 
-<!--   <input type="submit" value="CONFIRM">
-<!--   <%= f.submit 'CONFIRM', class: 'btn btn-primary' %> -->
+</body>
 
-<br>
-<br>
-<br>
-<% end %>
+<html>
 
 
