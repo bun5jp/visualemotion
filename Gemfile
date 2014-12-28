@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://production.s3.rubygems.org'
 ruby '2.0.0'
 gem 'rails', '4.0.5'
 
@@ -13,6 +13,7 @@ gem 'sprockets', '2.11.0'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem 'font-awesome-sass'
+gem 'rake', '10.4.2'
 
 group :development do
   gem 'sqlite3', '1.3.8'

@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://production.s3.rubygems.org/
   specs:
     actionmailer (4.0.5)
       actionpack (= 4.0.5)
@@ -161,6 +161,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.0.5)
   rails_12factor (= 0.0.2)
+  rake (= 10.4.2)
   sass-rails (= 4.0.5)
   sdoc (= 0.3.20)
   sprockets (= 2.11.0)
