@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>VISUALEMOTION/request</title>
-    <%= stylesheet_link_tag    'request', 'data-turbolinks-track' => true %>
+<head>
+   <title>VISUALEMOTION/request</title>
+   <%= stylesheet_link_tag    'request', 'data-turbolinks-track' => true %>
 
-    <!-- メニューバー　-->
-<p id="backhome"><%= link_to 'Home', 'top' %></p>
-<p id="terms_of_conditions"><%= link_to 'Terms of Conditions', 'law' %></p>
-      <!-- メニューバー　-->
 
-    <div class="page-header">
-      <h1>REQUEST</h1>
-      <br>  
-    </div>
-  </head>
- 
+<%= form_for @request, :url => request_thanks_path do |f| %>
+
+<!-- メニューバー　-->
+  <p id="backhome"><%= link_to 'Home', 'top' %></p>
+  <p id="terms_of_conditions"><%= link_to 'Terms of Conditions', 'law' %></p>
+
+</head>
+
+
   <body>
-  <%= form_for @request, :url => request_thanks_path do |f| %>
+    <div class="blackspace">
+      <h1>REQUEST</h1>
+      <p>ご記入内容をご確認ください</p>
+      <br>  
+      <table>
+        <tr>
+          <td><div class="field1">BOOK TITLE<%= f.hidden_field :title %></div></td>
+          <td class="text"><%= @request.title %></td>
+        </tr>
+        <tr>
+          <td><div class="field1">CATEGORY<%= f.hidden_field :category %></div></td>
+          <td class="text"><%= @request.category %></td>
+        </tr>
+        <tr>
+          <td><div class="field1">URL<%= f.hidden_field :book_url %></div></td>
+          <td class="text"><%= @request.book_url %></td>
+        </tr>
+        <tr>
+          <td><div class="field1">NAME<%= f.hidden_field :name %></div></td>    
+          <td class="text"><%= @request.name %></td>
+        </tr>
+        <tr>
+          <td><div class="field1">EMAIL<%= f.hidden_field :email %></div></td>    
+          <td class="text"><%= @request.email %></td>
+        </tr>
+        <tr>
+          <td><div class="field1">MESSAGE<%= f.hidden_field :message %></div></td>
+          <td class="text"><%= @request.message %></td>
 
-    <p>タイトル</p>
-    <%= f.hidden_field :title %>
-    <span><%= @request.title %><span>
-    <p>ジャンル</p>
-    <%= f.hidden_field :category %>
-    <span><%= @request.category %><span>
-    <p>参考URL</p>
-    <%= f.hidden_field :book_url %>
-    <span><%= @request.book_url %><span>
-    <p>MESSAGE</p>
-    <%= f.hidden_field :message %>
-    <span><%= @request.message %><span>
-    <p>NAME</p>
-    <%= f.hidden_field :name %>
-    <span><%= @request.name %><span>
-    <p>EMAIL</p>
-    <%= f.hidden_field :email %>
-    <span><%= @request.email %><span>
-    <br>  
-    <br>
-    <%= f.submit 'SEND!', :class => "button", disable_with: "SENDING..." %>
-    <% end %>
+        </tr>
+      </table>
 
+      <br>  
+      <br>
+      <%= f.submit 'SEND!', :class => "button", disable_with: "SENDING..." %>
+      <% end %>
+    </div>
   </body>
 </html>
 
