@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= jquery.simplesidebar.min.js
+//= jquery.infinitescroll.min.js
+//= jquery.socialbutton-1.9.0.min.js
 //= require turbolinks
 //= require_tree .
 
