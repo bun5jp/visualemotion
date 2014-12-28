@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>VISUALEMOTION/request</title>
+   <%= stylesheet_link_tag    'request', 'data-turbolinks-track' => true %>
+<!--    <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => true %> -->
+<!--    <%= csrf_meta_tags %>
+
+<!--    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<!--    // <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?4XU2G~E0OwQ%3D" charset="utf-8"></script> -->
+
+
+
+<%= form_for @request, :url => request_confirm_path do |f| %>
+
+<!-- メニューバー　-->
+<p id="backhome"><%= link_to 'Home', 'top' %></p>
+<p id="terms_of_conditions"><%= link_to 'Terms of Conditions', 'law' %></p>
+  <!-- メニューバー　-->
+<br>
+  <div class="page-header">
+    <h1>REQUEST</h1>
+    <p>
+      こちらでは掲載したい写真集のリクエストを受け付けています<br>
+      あなたのお気に入りの写真集をぜひシェアしてください
+    </p>
+  </div>
+</head>
+
+  <% if @request.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <ul>
+        <% @request.errors.each do |attr, msg| %>
+　　　　　<li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<body>
+  <br>
+  <div class="message">リクエストする写真集についてご記入ください。</div>
+  <table>
+    <tr>
+      <td><div class="field1">タイトル<%= f.hidden_field :title %></div></td>
+      <td><%= f.text_field :title, :class=>"text" %></td>
+    </tr>
+    <tr>
+      <td><div class="field1">ジャンル<%= f.hidden_field :category %></div></td>
+      <td><%= f.select :category, [["Art", "ART"], ["View", "VIEEW"]] %></td>
+    </tr>
+    <tr>
+    <!-- 　<select id="page_name" name="page[name]"><option value="rails_base">Railsの基礎</option> 
+    　<option value="ruby_base">Rubyの基礎</option></select> -->
+      <td><div class="field1">参考URL<%= f.hidden_field :book_url %></div></td>
+      <td><%= f.text_field :book_url, :class=>"text" %></td>
+    </tr>
+  </table>
+  <div class="message">連絡先をご記入ください。</div>
+  <table>
+    <tr>
+      <td><div class="field1">NAME<%= f.hidden_field :name %></div></td>    
+      <td><%= f.text_field :name, :class=>"text" %></td>
+    </tr>
+    <tr>
+      <td><div class="field1">EMAIL<%= f.hidden_field :email %></div></td>    
+      <td><%= f.text_field :email, :class=>"text" %></td>
+    </tr>
+    <tr>
+      <td><div class="field1">MESSAGE<%= f.hidden_field :message %></div></td>
+      <td><%= f.text_area :message, :class=>"text" %></td>
+    </tr>
+  </table>
+
+
+  <br>
+  <%= f.submit 'CONFIRM', :class => "button" %>
+  <% end %>
+
+</body>
+
+<html>
