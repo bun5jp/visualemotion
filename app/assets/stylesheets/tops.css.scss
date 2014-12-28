@@ -7,15 +7,8 @@ body{
   margin: 0;
   padding: 0;
   font-family:"Raleway","リュウミン L-KL", "Ryumin Light KL";
-  font-style:normal;
 
 }
-a:link {
-  font-style:normal;
-  text-decoration:underline;
-}
-
-
 p{
   height: 50px;
   text-align: center;
@@ -23,9 +16,7 @@ p{
   margin: 0;
   margin-top: 0px;
 }
-
 ul {
-  //text-align: center;
   margin: 0 auto;
   width: 300px;
   height: 50px;
@@ -115,7 +106,6 @@ h2{
 
 video{
   width: 100%;
-  position: fixed;
   z-index: -1 !important;
 }
 
@@ -317,7 +307,7 @@ ul {
 #container {
   margin: 0 auto;
   z-index: 3;
-  margin-top: 30px;
+  margin-top: 30px !important;
 
 
 }
@@ -327,10 +317,7 @@ ul {
 .testimage {
   width: 97%;
   text-align: center;
-  margin: 0 auto;
-  background-color: rgba(255,255,255,0.8);
-  padding-left: 1.5%;
-  padding-right: 1.5%;
+  margin: 0 auto; 
 
   img{
     //width: 24.8%;

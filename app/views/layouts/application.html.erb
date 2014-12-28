@@ -1,112 +1,70 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Visual Emotion | 美意識に革命を</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+  <script src="assets/jquery.infinitescroll.min.js"></script>
+  <script src="assets/jquery.simplesidebar.min.js"></script>
 
-  <head>
-    <title>Visualemotion</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => true %>
-     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+</head>
 
+<%= yield %>
 
-    
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="assets/jquery.masonry.min.js"></script>
+<script src="assets/imagesloaded.pkgd.min.js"></script>
+<script>
+$(function(){
+  var $container = $('.testimage').css({ opacity: 0 });
+  $container.imagesLoaded(function(){
+    $container.animate({ opacity: 1 });
+    $container.masonry({ itemSelector: '.box' });
+  });
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-     <script src="assets/jquery.simplesidebar.min.js"></script>
-     <script src="assets/jquery.infinitescroll.min.js"></script>
-     <script src="assets/jquery.socialbutton-1.9.0.min.js"></script>
-     <!--<script src="assets/jquery.pageswitch.js"></script>-->
-
-
-     <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
-
-
-
-  </head>
-  
- <%= yield %>
-  
-    <script src="assets/jquery.masonry.min.js"></script>
-        <script src="assets/imagesloaded.pkgd.min.js"></script>
-    <script>
-  // $(function(){
-  //   $('#container').masonry({
-  //     itemSelector: '.box',
-  //     //columnWidth: 340, //一列の幅サイズを指定
-  //     isAnimated: true, //スムースアニメーション設定
-  //     isFitWidth: true, //親要素の幅サイズがピッタリ
-  //   });
-  // });
-
-// var container = $('#container');
-
-// container.imagesLoaded(function () {
-//   container.masonry({
-//     //columnWidth: 200,
-//     itemSelector: '.box',
-//     isAnimated: true
-//   });
-// });
-//===================================================
-  $(function(){
-    var $container = $('.testimage').css({ opacity: 0 });
-    $container.imagesLoaded(function(){
-      $container.animate({ opacity: 1 });
-      $container.masonry({ itemSelector: '.box' });
-    });
-
-    $container.infinitescroll({
-      navSelector  : '.pagenation',
-      nextSelector : '.pagenation a[rel=next]',
-      itemSelector : '#container .testimage',
-      loading: {
-        msgText: '',
-        finishedMsg: '',
-      }
-    }, function( newElements ) {
-      var $newElems = $( newElements ).css({ opacity: 0 });
-      $newElems.imagesLoaded(function(){
-        $newElems.animate({ opacity: 1 });
-        $container.masonry( 'appended', $newElems, true  );
-      });
+  $container.infinitescroll({
+    navSelector  : '.pagenation',
+    nextSelector : '.pagenation a[rel=next]',
+    itemSelector : '#container .testimage',
+    loading: {
+      msgText: '',
+      finishedMsg: '',
+    }
+  }, function( newElements ) {
+    var $newElems = $( newElements ).css({ opacity: 0 });
+    $newElems.imagesLoaded(function(){
+      $newElems.animate({ opacity: 1 });
+      $container.masonry( 'appended', $newElems, true  );
     });
   });
+});
 $(function(){
-   
+
   $('#container').masonry({ //親要素のクラスを指定
     itemSelector: '.box', //整理される要素のclassを指定
     isAnimated: true, //スムースアニメーション設定
-  });
-   
+  }); 
 });
-
-
-
-
 </script>
 
 <!-- スムーズスクロール部分の記述 -->
 <script>
 $(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
+ $('a[href^=#]').click(function() {
       var speed = 400; // ミリ秒
-      // アンカーの値取得
       var href= $(this).attr("href");
-      // 移動先を取得
       var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
       var position = target.offset().top;
-      // スムーススクロール
       $('body,html').animate({scrollTop:position}, speed, 'swing');
       return false;
-   });
+    });
 });
-
 </script>
-
-  </body>
+<script src="assets/jquery.socialbutton-1.9.0.min.js"></script>
+</body>
 </html>

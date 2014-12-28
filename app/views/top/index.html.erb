@@ -1,169 +1,112 @@
-
 <div class="firstview">
-  <%= video_tag("top-v.mp4", :autoplay => true,:loop => true,) %>
- 
-<!--
-  <div class="viewlogo"></div>
- デザイン変更
-    <%= image_tag 'logo.png' %>
+ <!--  <%= video_tag("top-v.mp4", :autoplay => true,:loop => true,) %>
+-->
 
+<h1 id="1">美意識に、革命を</h1>
+<h2>たった一目で、あなたの価値観に衝撃を与える写真集がここにある</h2>
+</div>
 
-        <header>
-          <div class="header">
-            <div class="header-left">
-              <i class="fa fa-bars">MENU</i>
-            </div>
-              <div class="header-middle">VISUAL</br>EMOTION
-              </div>
-              <div class="header-right">
-              </div>
-          </div>
-         </header>
-       -->
-       <h1 id="1">美意識に、革命を</h1>
-       <h2>たった一目で、あなたの価値観に衝撃を与える写真集がここにある</h2>
-     </div>
-     <!--固定メニューバー-->
-     <div class="fixedmenu">
-      <div class="sidemenu">
+<!--固定メニューバー-->
 
-        <section class="navbar">
-          <div id="open-sb" class="menu-icon menu-button menu-right">
-            <i class="fa fa-bars"></i><nav>MENU</nav>
-          </div>
-        </section>
-        
+<div class="fixedmenu">
+  <div class="sidemenu">
+    <section class="navbar">
+      <div id="open-sb" class="menu-icon menu-button menu-right">
+        <i class="fa fa-bars"></i><nav>MENU</nav>
       </div>
-
-      <div class="category">
-        <%= link_to 'ABOUT', 'about' %>
-      </div>
-      <a href="#1" class ="go-home">↑</a>
-      <ul>
-        <li><P>ART</P></li>
-        <li><P>HUMAN</P></li>
-        <li><P>VIEW</P></li>
-        <li><P>OTHER</P></li>
-      </ul>
-    </div>
-    <!--  メニューバー終了-->
-
-
-    <!-- サイドバー-->
-    <section class="sidebar">
-      <li><a><i class="fa fa-times-circle-o"></i></a></li>
-
-      <nav>
-        <p>MENU</p>
-        <ul class="accordion">
-          <li><a>Home</a></li>
-          <li><%= link_to 'About', 'about' %></li>
-          <li id="ac"><section>Category+</section></li>
-          <ul>
-            <li><a href=" #">リスト 1-1</a></li>
-            <li><a href=" #">リスト 1-2</a></li>
-            <li><a href=" #">リスト 1-3</a></li>
-            <li><a href=" #">リスト 1-4</a></li>
-            <li><a href=" #">リスト 1-5</a></li>
-            <li><a href=" #">リスト 1-6</a></li>
-          </ul>
-          <li><%= link_to 'Book Request', 'contact' %></li>
-          <li><%= link_to 'Contect', 'contact' %></li>
-          <li><%= link_to 'Blog', '#' %></li>
-        </ul>
-      </nav>
-    <div id="socialize">
-      <p>SOCIAL BUTTON</p>
-      <div id="facebook_like" class="social"></div>
-      <div id="twitter" class="social"></div>
-      <div id="hatena" class="social"></div>
-    </div>
     </section>
+  </div>
+  <div class="category">
+    <%= link_to 'ABOUT', 'about' %>
+  </div>
+  <a href="#1" class ="go-home">↑</a>
+  <ul>
+    <li><P>ART</P></li>
+    <li><P>HUMAN</P></li>
+    <li><P>VIEW</P></li>
+    <li><P>OTHER</P></li>
+  </ul>
+</div>
 
-    <!-- サイドバー-->
+<!--  メニューバー終了-->
 
-<main>
-    <div id="container" class="centered">
-      <div id="content">
-        <div id ="layer"></div>
-        <div id ="pop_loader" style = "display:none;"></div>
-        <div id ="pop"></div>
-        <div class="testimage">
+<!-- サイドバー-->
 
+<section class="sidebar">
+  <li><a><i class="fa fa-times-circle-o"></i></a></li>
+  <nav>
+    <p>MENU</p>
+    <ul class="accordion">
+      <li><a>Home</a></li>
+      <li><%= link_to 'About', 'about' %></li>
+      <li id="ac">
+        <section>Category+</section>
+      </li>
+      <ul>
+        <li><a href=" #">リスト 1-1</a></li>
+        <li><a href=" #">リスト 1-2</a></li>
+        <li><a href=" #">リスト 1-3</a></li>
+        <li><a href=" #">リスト 1-4</a></li>
+        <li><a href=" #">リスト 1-5</a></li>
+        <li><a href=" #">リスト 1-6</a></li>
+      </ul>
+      <li><%= link_to 'Book Request', 'contact' %></li>
+      <li><%= link_to 'Contect', 'contact' %></li>
+      <li><%= link_to 'Blog', '#' %></li>
+    </ul>
+  </nav>
+  <div id="socialize">
+    <p>SOCIAL BUTTON</p>
+    <div id="facebook_like" class="social"></div>
+    <div id="twitter" class="social"></div>
+    <div id="hatena" class="social"></div>
+  </div>
+</section>
 
-          <% @books.each do |book| %>
-          <% num = Random.rand(1 .. 2); %>
-          <img class="pop box effect w<%= num %>" data-popid="<%= book.id %>" style="cursor: pointer; " src= "/docs/<%= book.image1 %>"/>
+<!-- サイドバー-->
 
-          <% end %>
-        </div>
-
-<!-- 
-        <%= image_tag("pic1.jpeg") %>
-        <%= image_tag("pic2.jpeg") %>
-        <%= image_tag("pic3.jpeg") %>
-        <%= image_tag("pic4.jpeg") %>
-        <%= image_tag("pic5.jpeg") %>
-        <%= image_tag("pic6.jpeg") %>
-        <%= image_tag("pic7.jpeg") %>
-        <%= image_tag("pic8.jpeg") %>
-        <%= image_tag("pic9.jpeg") %>
-        <%= image_tag("pic10.jpeg") %>
-        <%= image_tag("pic11.jpeg") %>
-        <%= image_tag("pic12.jpeg") %>
-        <%= image_tag("pic13.jpeg") %>
-        <%= image_tag("pic14.jpeg") %>
-        <%= image_tag("pic15.jpeg") %>
-        <%= image_tag("pic16.jpeg") %>
-        <%= image_tag("pic17.jpeg") %>
-        <%= image_tag("pic18.jpeg") %>
-        <%= image_tag("pic19.jpeg") %>
-        <%= image_tag("pic20.jpeg") %>
-
-
-      -->
-
-
+  <div id="container" class="centered">
+    <div id="content">
+      <div id ="layer"></div>
+      <div id ="pop_loader" style = "display:none;"></div>
+      <div id ="pop"></div>
+      <div class="testimage">
+        <% @books.each do |book| %>
+        <% num = Random.rand(1 .. 2); %>
+        <img class="pop box effect w<%= num %>" data-popid="<%= book.id %>" style="cursor: pointer; " src= "/docs/<%= book.image1 %>"/>
+        <% end %>
+      </div>
     </div>
   </div>
   <div class="pagenation">
     <a href="?p=<%= @nextpage %>" rel="next"></a>
   </div>
 
+  <%= yield %>
 
-
-    <%= yield %>
-
-    <script>
-    $( ".sidebar" ).simpleSidebar({
-      settings: {
-        opener: "#open-sb",
-        wrapper: ".wrapper",
-        animation: {
-          easing: "easeOutQuint"
-        }
-      },
-      sidebar: {
-        align: "left",
-        width: 310,
-        closingLinks: 'a',
+  <script>
+  $( ".sidebar" ).simpleSidebar({
+    settings: {
+      opener: "#open-sb",
+      wrapper: ".wrapper",
+      animation: {
+        easing: "easeOutQuint"
       }
+    },
+    sidebar: {
+      align: "left",
+      width: 310,
+      closingLinks: 'a',
+    }
+  });
+  </script>
 
-
-    });
-
-    </script>
-
-
-
-
-    <script type="text/javascript">
-    $(document).ready(function(){
-      var layer = $("#layer");
-      var pop = $("#pop");
-      var close = $("#close");
-      var pop_loader = $("#pop_loader");
-
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var layer = $("#layer");
+    var pop = $("#pop");
+    var close = $("#close");
+    var pop_loader = $("#pop_loader");
 // for popup
 function init(){
   var box = $("#popup")
@@ -172,7 +115,6 @@ function init(){
     marginTop: Math.round(-(box.height() / 2)) + 'px'
   })
 }
-
 $(window).resize(function(e){
   var box = $("#popup")
   box.css({
@@ -180,10 +122,7 @@ $(window).resize(function(e){
     marginTop: Math.round(-(box.height() / 2)) + 'px'
   })
 })
-
 function showPopup(id){
-
-
   pop_loader.show()
   pop.empty();
   layer.fadeIn('fast');
@@ -201,41 +140,28 @@ function showPopup(id){
       init();
     },
 
-
     error: function(){
       alert('エラーが発生しました。申し訳ありませんがもう一度やり直してください');
     }
-
   })
-
 }
-
 function htmlEscape(str){
   return str.replace(/<\/?[^>]+>/gi, "");
 }
-
 $(".pop").live('click',function(e){
   showPopup($(this).data('popid'))
   pop.fadeIn('fast');
 })
-
 layer.click(function(){
   pop.hide();
   layer.fadeOut('fast');
 })
-
 close.live('click',function(){
   pop.hide();
   layer.fadeOut('fast');
 })
-
-
-
-
 })
-
 </script>
-
 
 <!-- ソーシャルボタン用 -->
 <script type="text/javascript">
@@ -259,21 +185,14 @@ $(function() {
 <script>
 //アコーディオン  
 $(function(){
-
   $(".accordion #ac").click(function(){
     $(this).next("ul").slideToggle();
     $(this).children("section").toggleClass("open");
   }); 
 });
-
 </script>
 
 <!-- Start of Amazon Publisher Studio Loader -->    
 <script>  window.amznpubstudioTag = "bun5jp-22";  </script>    
 <!-- Do not modify the following code ! -->  
 <script async="true" type="text/javascript" src="http://ps-jp.amazon-adsystem.com/domains/bun5jp-22_6f0eb48a-24e8-455c-b05e-7958a9fa76b3.js" charset="UTF-8"></script>    <!-- End of Amazon Publisher Studio Loader -->  
-
-
-
-
-</main>
