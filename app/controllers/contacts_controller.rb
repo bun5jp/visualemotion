@@ -18,6 +18,11 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     ContactMailer.received_email(@contact).deliver
     render :action => 'thanks'
+
+    # @inquiry = Inquiry.new(params[:inquiry])
+    # InquiryMailer.received_email(@inquiry).deliver
+ 
+
   end
 end
 
