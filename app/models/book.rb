@@ -5,8 +5,8 @@ belongs_to :subcategory
 # acts_as_taggable
 
   # validates :category_id,
-  validates :title,uniqueness: true
-  validates :amazon_link,uniqueness: true
+   validates :title,uniqueness: true
+   validates :amazon_link,uniqueness: true
 
 
  def set_image(file1, file2, file3)
