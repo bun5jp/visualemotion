@@ -13,6 +13,7 @@ gem 'sprockets', '2.11.0'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem 'heroku'
+gem 'i18n','0.7.0'
 gem 'font-awesome-sass';
 
 group :development do
