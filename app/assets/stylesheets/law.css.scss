@@ -28,6 +28,28 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
   }
 }
 
+.about{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    line-height: 40px;
+    font-family: Raleway;
+    font-weight: bold;
+
+    &:hover{
+        border-radius: 10px;
+        background-color: #f8ced0;
+        }
+  }
+}
+
 /* LAW
 -------------------------------*/
 

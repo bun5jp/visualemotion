@@ -1,14 +1,9 @@
 Visualemotion::Application.routes.draw do
 
-
-  # get "about/index"
-  # resources :contact
   resources :books
   resources :tops
   resources :abouts
   resources :json
-  # resources :abouts
-
 
   get 'law' => 'law'
 
@@ -16,6 +11,10 @@ Visualemotion::Application.routes.draw do
   post 'contact/confirm' => 'contact#confirm'   # 確認画面
   post 'contact/thanks' => 'contact#thanks'     # 送信完了画面
 
+
+  get 'request' => 'request#index'              # 入力画面
+  post 'request/confirm' => 'request#confirm'   # 確認画面
+  post 'request/thanks' => 'request#thanks'     # 送信完了画面
 
   get 'top/index' => 'top#index'
   get 'top' => 'top#index'
