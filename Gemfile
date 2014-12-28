@@ -12,8 +12,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
-gem 'heroku'
-gem 'font-awesome-sass';
+gem 'font-awesome-sass'
 
 group :development do
   gem 'sqlite3', '1.3.8'
