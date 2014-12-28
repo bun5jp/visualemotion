@@ -43,8 +43,7 @@
         <td><%= book.category_id %></td>
         <td><%= book.note %></td>
         <td><%= book.del_flg %></td>
-        <td><%= raw book.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></td>
-        <!-- <p>Tags:  <%= book.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p> -->
+     
 
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
