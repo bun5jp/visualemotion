@@ -314,11 +314,10 @@ ul {
   }
 }
 
-main {
+#container {
   margin: 0 auto;
   z-index: 3;
   margin-top: 30px;
-  background-color: white;
 
 
 }
@@ -329,8 +328,9 @@ main {
   width: 97%;
   text-align: center;
   margin: 0 auto;
-  background-color: white;
-
+  background-color: rgba(255,255,255,0.8);
+  padding-left: 1.5%;
+  padding-right: 1.5%;
 
   img{
     //width: 24.8%;
