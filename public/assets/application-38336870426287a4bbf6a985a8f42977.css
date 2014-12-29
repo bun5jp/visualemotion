@@ -10,14 +10,14 @@
 @import url(bootstrap.min.css);
 /* Global Layout
 -------------------------------*/
-/* line 6, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 6, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 body {
   margin: 0;
   padding: 0;
   font-family: "Raleway","リュウミン L-KL", "Ryumin Light KL";
 }
 
-/* line 12, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 12, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 p {
   height: 50px;
   text-align: center;
@@ -26,7 +26,7 @@ p {
   margin-top: 0px;
 }
 
-/* line 19, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 19, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul {
   margin: 0 auto;
   width: 300px;
@@ -34,7 +34,7 @@ ul {
   padding: 0px;
 }
 
-/* line 25, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 25, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 li {
   list-style: none;
   float: left;
@@ -44,25 +44,25 @@ li {
   width: 75px;
   line-height: 50px;
 }
-/* line 33, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 33, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 li p {
   font-size: 20px;
   display: block;
   transition-duration: 1s;
 }
-/* line 37, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 37, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 li p:hover {
   background-color: #f8ced0;
 }
 
-/* line 43, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 43, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .container {
   max-width: 1336px;
 }
 
 /* Navigation
 -------------------------------*/
-/* line 48, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 48, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .header {
   background-color: rgba(0, 0, 0, 0.7);
   height: 50px;
@@ -71,7 +71,7 @@ li p:hover {
   color: white;
 }
 
-/* line 55, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 55, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .header-left {
   flex-grow: 1;
   line-height: 50px;
@@ -79,7 +79,7 @@ li p:hover {
   text-align: center;
 }
 
-/* line 61, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 61, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .header-middle {
   flex-grow: 6;
   line-height: 25px;
@@ -88,7 +88,7 @@ li p:hover {
   letter-spacing: 0;
 }
 
-/* line 68, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 68, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .header-right {
   flex-grow: 1;
   line-height: 50px;
@@ -98,7 +98,7 @@ li p:hover {
 
 /* First View
 -------------------------------*/
-/* line 77, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 77, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .firstview {
   background-size: cover;
   background-position: center;
@@ -106,7 +106,7 @@ li p:hover {
   width: 100%;
   background-attachment: fixed;
 }
-/* line 84, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 84, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .firstview h1 {
   padding-top: 190px;
   font-size: 7rem;
@@ -119,7 +119,7 @@ li p:hover {
   text-shadow: 1px 1px 3px #000;
   z-index: 3;
 }
-/* line 96, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 96, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .firstview h2 {
   font-size: 1.5rem;
   text-align: center;
@@ -130,7 +130,7 @@ li p:hover {
   z-index: 3;
 }
 
-/* line 107, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 107, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 video {
   width: 100%;
   z-index: -1 !important;
@@ -138,7 +138,7 @@ video {
 
 /* Side Navigation
 -------------------------------*/
-/* line 114, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 114, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidemenu {
   width: 125px;
   float: left;
@@ -147,12 +147,12 @@ video {
   text-align: center;
   margin: 0 auto;
 }
-/* line 122, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 122, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidemenu:hover {
   border-radius: 10px;
   background-color: #f8ced0;
 }
-/* line 126, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 126, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidemenu div {
   font-size: 20px;
   display: block;
@@ -164,7 +164,7 @@ video {
   line-height: 50px;
 }
 
-/* line 137, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 137, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .fa {
   color: white;
   margin: 0;
@@ -175,11 +175,11 @@ video {
   margin-right: -10px;
 }
 
-/* line 148, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 148, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #open-sb {
   width: 125px !important;
 }
-/* line 150, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 150, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #open-sb nav {
   font-size: 20px;
   display: block;
@@ -191,7 +191,7 @@ video {
 
 /* Go Home Navigation
 -------------------------------*/
-/* line 164, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 164, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .go-home {
   width: 50px;
   float: left;
@@ -203,7 +203,7 @@ video {
   font-size: 1.5rem;
   cursor: n-resize;
 }
-/* line 175, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 175, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .go-home:hover {
   border-radius: 10px;
   background-color: #f8ced0;
@@ -211,7 +211,7 @@ video {
 
 /* Category
 -------------------------------*/
-/* line 183, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 183, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .fixedmenu {
   width: 300px;
   height: 100px;
@@ -221,19 +221,19 @@ video {
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 191, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 191, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .fixedmenu .category {
   width: 125px;
   float: left;
   display: block;
   transition-duration: 1s;
 }
-/* line 196, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 196, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .fixedmenu .category:hover {
   border-radius: 10px;
   background-color: #f8ced0;
 }
-/* line 201, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 201, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .fixedmenu .category a {
   font-size: 18px;
   display: block;
@@ -245,14 +245,14 @@ video {
   text-decoration: none;
 }
 
-/* line 216, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 216, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul {
   margin: 0 auto;
   width: 300px;
   height: 50px;
   padding: 0px;
 }
-/* line 222, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 222, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul li {
   list-style: none;
   float: left;
@@ -261,7 +261,7 @@ ul li {
   width: 75px;
   line-height: 50px;
 }
-/* line 229, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 229, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul li p {
   cursor: pointer;
   font-size: 15px;
@@ -269,7 +269,7 @@ ul li p {
   transition-duration: 1s;
   color: white;
 }
-/* line 235, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 235, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul li p:hover {
   border-radius: 10px;
   background-color: #f8ced0;
@@ -277,11 +277,11 @@ ul li p:hover {
 
 /* sidebar
 -------------------------------*/
-/* line 245, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 245, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar {
   background-color: #f8ced0;
 }
-/* line 247, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 247, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar li > a > .fa {
   display: block;
   cursor: pointer;
@@ -290,17 +290,17 @@ ul li p:hover {
   margin: 10px 0px 10px 270px;
   transition-duration: 0.5s;
 }
-/* line 254, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 254, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar li > a > .fa:hover {
   color: white;
 }
-/* line 259, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 259, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar nav {
   clear: both;
   width: 310px;
   text-align: left;
 }
-/* line 263, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 263, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar nav p {
   font-size: 2rem;
   color: red;
@@ -310,11 +310,11 @@ ul li p:hover {
   line-height: 50px;
   margin-bottom: 10px;
 }
-/* line 272, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 272, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar nav ul {
   margin: 0;
 }
-/* line 274, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 274, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar nav ul li {
   width: 310px;
   height: 49px;
@@ -322,11 +322,11 @@ ul li p:hover {
   text-align: left;
   transition-duration: 0.5s;
 }
-/* line 281, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 281, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar nav ul li:hover {
   background-color: white;
 }
-/* line 286, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 286, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar nav ul li a {
   font-size: 26px;
   color: black;
@@ -337,13 +337,13 @@ ul li p:hover {
   padding-left: 30px;
   transition-duration: 0.6s;
 }
-/* line 295, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 295, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .sidebar nav ul li a:hover {
   color: red;
   padding-left: 40px;
 }
 
-/* line 307, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 307, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #container {
   margin: 0 auto;
   z-index: 3;
@@ -352,31 +352,31 @@ ul li p:hover {
 
 /* Books 
 -------------------------------*/
-/* line 317, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 317, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .testimage {
   width: 97%;
   text-align: center;
   margin: 0 auto;
 }
-/* line 322, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 322, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .testimage img {
   border-radius: 10px;
   margin: 0.2%;
   border: 0.1% solid gray;
   max-height: none;
 }
-/* line 334, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 334, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .testimage img:hover {
   background-color: #0a0a0a;
   opacity: 0.8;
 }
 
-/* line 342, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 342, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .w1 {
   width: 24.4%;
 }
 
-/* line 345, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 345, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .w2 {
   width: 24.4%;
 }
@@ -385,7 +385,7 @@ ul li p:hover {
 -------------------------------*/
 /* popup ライトボックスの記述   
 -------------------------------*/
-/* line 362, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 362, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #popup {
   position: fixed;
   text-align: center;
@@ -401,7 +401,7 @@ ul li p:hover {
   background-color: #fff;
 }
 
-/* line 380, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 380, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #layer {
   position: fixed;
   top: 0;
@@ -415,7 +415,7 @@ ul li p:hover {
   filter: alpha(opacity=70) !important;
 }
 
-/* line 394, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 394, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .amazon_img img {
   margin-left: 50px;
   max-height: 300px;
@@ -423,7 +423,7 @@ ul li p:hover {
   z-index: 100;
 }
 
-/* line 404, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 404, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #close {
   color: #aaa;
   position: relative;
@@ -439,47 +439,47 @@ ul li p:hover {
   transition-duration: 0.6s;
 }
 
-/* line 419, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 419, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #close:hover {
   color: black;
   /*opacity: 0.90;*/
   /*filter:alpha(opacity=90);*/
 }
 
-/* line 426, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 426, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .title {
   margin: 15px auto;
 }
 
-/* line 431, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 431, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .social_link img {
   margin: 0 10px;
 }
-/* line 433, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 433, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .social_link img:hover {
   opacity: 0.6;
 }
 
-/* line 438, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 438, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .note {
   width: 90%;
   margin: 20px auto;
   padding: 20px;
 }
 
-/* line 444, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 444, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 .amzn-shop-now-icon {
   z-index: 99;
 }
 
 /* アコーディオン
 -------------------------------*/
-/* line 453, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 453, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul.accordion ul {
   display: none;
 }
 
-/* line 457, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 457, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul.accordion section {
   font-size: 26px;
   color: #F55;
@@ -491,13 +491,13 @@ ul.accordion section {
   transition-duration: 0.6s;
   cursor: pointer;
 }
-/* line 468, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 468, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul.accordion section:hover {
   color: orange;
   padding-left: 40px;
 }
 
-/* line 476, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 476, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul.accordion ul li {
   width: 310px;
   height: 29px;
@@ -505,11 +505,11 @@ ul.accordion ul li {
   text-align: left;
   transition-duration: 0.5s;
 }
-/* line 483, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 483, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul.accordion ul li:hover {
   background-color: white;
 }
-/* line 487, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 487, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul.accordion ul li a {
   font-size: 16px;
   color: black;
@@ -520,7 +520,7 @@ ul.accordion ul li a {
   padding-left: 60px;
   transition-duration: 0.6s;
 }
-/* line 496, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 496, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 ul.accordion ul li a:hover {
   color: red;
   padding-left: 65px;
@@ -528,7 +528,7 @@ ul.accordion ul li a:hover {
 
 /* ソーシャル対応
 -------------------------------*/
-/* line 509, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 509, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #socialize {
   clear: both;
   width: 250px;
@@ -536,32 +536,32 @@ ul.accordion ul li a:hover {
   margin: 0 auto;
   padding-top: 50px;
 }
-/* line 515, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 515, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #socialize p {
   color: red;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 522, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 522, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #facebook_like {
   float: left;
   padding-right: 10px;
 }
 
-/* line 527, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 527, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #twitter {
   float: left;
 }
 
-/* line 531, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 531, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #hatena {
   float: right;
 }
 
 /* 抹殺予定   
 -------------------------------*/
-/* line 538, /Users/katagirimaya/rails_projects/visualemotion/app/assets/stylesheets/tops.css.scss */
+/* line 538, /Users/apple/Desktop/Progate/visual emotion/app/assets/stylesheets/tops.css.scss */
 #amznimgtoolsplate {
   display: none !important;
 }

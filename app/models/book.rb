@@ -1,8 +1,12 @@
 class Book < ActiveRecord::Base
 belongs_to :category
+belongs_to :subcategory
+
 # acts_as_taggable
 
-  validates :category_id, length: { maximum: 4 }
+  # validates :category_id,
+   validates :title,uniqueness: true
+   validates :amazon_link,uniqueness: true
 
 
  def set_image(file1, file2, file3)

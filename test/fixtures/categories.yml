@@ -1,7 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+category1:
+  name: art
+  id: 1
 
-one:
-  name: MyString
+category2:
+  name: human
+  id: 2
 
-two:
-  name: MyString
+category3:
+  name: view
+  id: 3
+
+category4:
+  name: animal
+  id: 4
