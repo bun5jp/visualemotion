@@ -28,29 +28,6 @@
   }
 }
 
-#terms_of_conditions{
-  position: fixed;
-  top: 90px;
-  right: 30px;
-  a{
-    display: block;
-    width: 200px;
-    height: 40px;
-    font-family: Raleway;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    transition-duration: 1s;
-    line-height: 40px;
-    &:hover{
-        border-radius: 10px;
-        background-color: #f8ced0;
-        }
-  }
-}
-ul li{
-  width: 300px;
-}
 
 
 /* Background

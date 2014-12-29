@@ -3,8 +3,8 @@ class Contact
  
   attr_accessor :name, :email, :message
  
-  validates :name, :presence => {:message => 'NAMEを入力してください'}
-  validates :email, :presence => {:message => 'EMAILを入力してください'}
+  validates :name, :presence => {:message => '*NAMEを入力してください'}
+  validates :email, :presence => {:message => '*EMAILを入力してください'}
   
 end
 
