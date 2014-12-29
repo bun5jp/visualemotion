@@ -14,6 +14,7 @@ gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem 'font-awesome-sass'
 gem 'rake', '10.4.2'
+gem 'unicorn'
 
 group :development do
   gem 'sqlite3', '1.3.8'
