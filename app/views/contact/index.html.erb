@@ -15,12 +15,12 @@
 
 <!-- メニューバー　-->
 <p id="backhome"><%= link_to 'Home', 'top' %></p>
+<p id="book_request"><%= link_to 'Book Request', 'request' %></p>
 <p id="terms_of_conditions"><%= link_to 'Terms of Conditions', 'law' %></p>
   <!-- メニューバー　-->
 <br>
-  <div class="page-header">
-    <h1>CONTACT</h1>
-  </div>
+    <h1>CONTACT</h1><br>
+    <p class="index_message">ご質問やご意見はこちらからお願いいたします<br></p>
 </head>
 
   <% if @contact.errors.any? %>

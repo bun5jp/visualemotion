@@ -6,7 +6,7 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
 /* top header
 -------------------------------*/
 
-.backhome{
+#backhome{
   position: fixed;
   top: 30px;
   right: 30px;
@@ -28,9 +28,9 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
   }
 }
 
-.about{
+#about{
   position: fixed;
-  top: 30px;
+  top: 80px;
   right: 30px;
   a{
     display: block;
@@ -57,12 +57,12 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
   background-image: image-url('law.jpg');
   background-size: cover;
   background-attachment: scroll;
-  height: 800px;
+  height: 1000px;
   width: 100%;
   margin: 0;
 }
 
-.blackbox{
+.blackspace{
   background-color: rgba(0,0,0,0.7);
   position: relative;
   top: 150px;
@@ -90,9 +90,16 @@ body{
 // }
 
 .body1{
-  font-size: 1rem;
-  text-align: left;	
+  font-size: 0.8rem;
+  font-weight: lighter; 
 }
+
+#date{
+  font-size: 0.8rem;  
+  text-align: right;
+}
+
+
 
 // span{
 //   font-size: 1.5rem;

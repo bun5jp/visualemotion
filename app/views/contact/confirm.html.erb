@@ -9,31 +9,25 @@
 <p id="terms_of_conditions"><%= link_to 'Terms of Conditions', 'law' %></p>
       <!-- メニューバー　-->
 
-    <div class="page-header">
-      <h1>CONTACT</h1>
-      <br>  
-      <br>
-    </div>
   </head>
  
   <body>
+    <h1>CONTACT</h1>
+    <br>  
+    <br>
+
   <%= form_for @contact, :url => contact_thanks_path do |f| %>
-    <p>NAME</p>
-    <%= f.hidden_field :name %>
-    <span><%= @contact.name %><span>
-    <br>  
+
+    <p class="confirm_field">NAME<%= f.hidden_field :name %></p>
+    <p class="confirm_text"><%= @contact.name %></p>
     <br>
-    <p>EMAIL</p>
-    <%= f.hidden_field :email %>
-    <span><%= @contact.email %><span>
+    <p class="confirm_field">EMAIL<%= f.hidden_field :email %></p>
+    <p class="confirm_field"><%= @contact.email %></p>
     <br>  
+    <p class="confirm_field">MESSAGE<%= f.hidden_field :message %></p>
+    <p class="confirm_field"><%= simple_format(@contact.message) %></p>
     <br>
-    <p>MESSAGE</p>
-    <%= f.hidden_field :message %>
-    <span><%= simple_format(@contact.message) %><span>
-    <br>  
-    <br>
-    <div id="box"><%= f.submit 'SEND!', :class => "button", disable_with: "SENDING..." %></div>
+    <%= f.submit 'SEND!', :class => "button", disable_with: "SENDING..." %>
     <% end %>
 
   </body>

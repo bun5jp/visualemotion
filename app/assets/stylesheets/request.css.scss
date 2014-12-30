@@ -1,9 +1,9 @@
-$font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+// $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
 @charset "UTF-8";
 
 
-/* HEADER
+/* Header
 -------------------------------*/
 
 #backhome{
@@ -14,12 +14,13 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
     display: block;
     width: 100px;
     height: 40px;
-    color: black;
+    color: white;
     text-decoration: none;
     transition-duration: 1s;
     line-height: 40px;
     font-family: Raleway;
     font-weight: bold;
+    color: white;
     &:hover{
         border-radius: 10px;
         background-color: #f8ced0;
@@ -27,37 +28,97 @@ $font-family-sans-serif:  "リュウミン L-KL", "Ryumin Light KL", "Hiragino K
   }
 }
 
-/* LAYOUT
--------------------------------*/
-
-head{
-  color: black;
+#contact{
+  position: fixed;
+  top: 90px;
+  right: 30px;
+  a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    line-height: 40px;
+    font-family: Raleway;
+    font-weight: bold;
+    color: white;
+    &:hover{
+        border-radius: 10px;
+        background-color: #f8ced0;
+        }
+  }
 }
 
+#terms_of_conditions{
+  position: fixed;
+  top: 150px;
+  right: 30px;
+  a{
+    display: block;
+    width: 180px;
+    height: 40px;
+    font-family: Raleway;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    line-height: 40px;
+    &:hover{
+        border-radius: 10px;
+        background-color: #f8ced0;
+        }
+  }
+}
+ul li{
+  width: 300px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: white;
+}
+
+
+/* Background
+-------------------------------*/
+
 body{
-  background-image: image-url('contact.jpg');
+  background-image: image-url('request.jpg');
   background-size: cover;
   background-attachment: scroll;
   background-position: center;
   position: relative;
   // text-align: center;
-  height: 800px;
+  height: 1000px;
   width: 100%;
   // font-family: Futura,Trebuchet MS,Arial,sans-serif;
-  color: black;
+  color: white;
   // float: center;
 }
 
+.blackspace{
+  background-color: rgba(0,0,0,0.5);
+  position: relative;
+  top: 150px;
+  background-position: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 50px 50px;
+  background-size: 200px 150px;
+  // padding: 20px 200px;
+  // width: 50%;
+  // height: 50%;
+}
+
+/* Layout
+-------------------------------*/
+
+
 h1{
   font-size: 3rem;
-  color: black;
-  text-align: left;
-  margin-left: 450px;
-  float: center;
+  text-align: center;
 }
 
 p{
-  color: black;
   font-size: 1rem;
   text-align: center;
   font-family: serif;
@@ -68,12 +129,11 @@ p{
 -------------------------------*/
 
 table{
-  color: black;
   font-size: 1rem;
   // text-align: left;
-  // width: 100%;
+  width: 100%;
   border: none;
-  padding-left: 450px;
+  // padding-left: 450px;
   // text-align: center;
   // float: center;
 
@@ -81,32 +141,46 @@ table{
 }
 
 .field1{
-  font-family: Raleway,Meiryo;
-  padding: 30px;
+  font-family: "Raleway", "Meiryo";
+  padding: 20px 0px;
   font-weight: bold;
-  text-align: left;
-  text-transform: 0;
+  // text-align: center;
+  // text-transform: 0;
+  // float: center;
+  // padding-left: 150px;
+  // padding-left: 100px;
+  // width: 200px;
+  // height: 80px
+  margin-left: 100px;
 
 }
 
 .text{
-  font-size: 1rem;
+  font-size: 1rem;  
   // padding: 0;
   border: none;
   line-height: 30px;
-  width: 500px;
+  // width: 500px;
   // margin: 0;
   // line-height: 30px !important;
   // margin-right: 100px;
-  width: 250px;
-  height: 50px;
+  width: 300px;
+  height: 35px;
   float: center;
+  // padding-left: 0px;
+}
+
+.text2{
+  font-size: 1rem; 
+  line-height: 30px;
+  width: 300px;
+  height: 70px;
+  float: center;
+}
   
 
-  }
-
 .message{
-  text-align: center;
+  // text-align: center;
   font-family: Raleway,Meiryo;
 }
 /* 
@@ -118,11 +192,14 @@ table{
   font-size: 1rem;
   height: 50px;
   width: 200px;
-  background-color: white;
+  background-color: #996633;
+  color: white;
   font-family: Raleway;
   font-weight: bold;
-  float: center;
-  margin-left: 500px;
+  // float: center;
+  // text-align: center;
+  margin-left: 230px; /* check -*/
+
 }
 
 /* 
@@ -143,7 +220,7 @@ span{
 .header{
   float: center;
   background-color: none;
-  color: black;
+
 }
 
 
