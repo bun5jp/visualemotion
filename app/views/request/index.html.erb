@@ -12,6 +12,7 @@
 <%= form_for @request, :url => request_confirm_path do |f| %>
 <!-- メニューバー　-->
   <p id="backhome"><%= link_to 'Home', 'top' %></p>
+  <p id="contact"><%= link_to 'Contact', 'contact' %></p>
   <p id="terms_of_conditions"><%= link_to 'Terms of Conditions', 'law' %></p>
   <!-- メニューバー　-->
   <% if @request.errors.any? %>
@@ -29,7 +30,7 @@
 <body>
   <div class="blackspace">
     <br>
-    <h1>REQUEST</h1>
+    <h1>BOOK REQUEST</h1>
     <p>
       こちらでは掲載したい写真集のリクエストを受け付けています<br>
       あなたのお気に入りの写真集をぜひシェアしてください
@@ -44,7 +45,7 @@
       </tr>
       <tr>
         <td><div class="field1">CATEGORY<%= f.hidden_field :category %></div></td>
-        <td><%= f.select :category, { art: "Art", view: "View"}, {}, { class: "text" } %></td>
+        <td><%= f.select :category, { art: "Art", view: "View", human: "Human", animal: "Animal"}, {}, { class: "text" } %></td>
       </tr>
       <tr>
       <!-- 　<select id="page_name" name="page[name]"><option value="rails_base">Railsの基礎</option> 
